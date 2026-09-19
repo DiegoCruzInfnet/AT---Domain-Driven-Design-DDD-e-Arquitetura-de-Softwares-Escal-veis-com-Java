@@ -3,7 +3,7 @@
 Evolução do sistema **Freela Marketplace** para um modelo de comunicação assíncrona orientada a eventos entre microsserviços, usando Apache Kafka — com publicação transacional, idempotência, tratamento de falhas, rastreamento distribuído e logs centralizados.
 
 
-## Arquitetura em um parágrafo
+## Arquitetura 
 
 O `contrato-service` publica eventos de domínio (`ContratoCriado`, `EntregaRegistrada`, `ContratoConcluido`, `ContratoCancelado`) no tópico Kafka `contrato-eventos`, usando o **Transactional Outbox Pattern** para garantir consistência entre o banco de dados e a publicação. Três serviços auxiliares — `notificacao-service`, `reputacao-service` e `auditoria-service` — consomem esses eventos de forma independente e idempotente, sem nenhuma chamada HTTP síncrona entre eles. Todo o fluxo é rastreável de ponta a ponta via `correlationId` e Zipkin, com logs centralizados no Elasticsearch/Kibana.
 
@@ -42,7 +42,7 @@ mvn -pl reputacao-service spring-boot:run
 mvn -pl api-gateway spring-boot:run
 ```
 
-## Testando rapidamente
+## Testando 
 
 ```powershell
 # Cria um contrato (via Gateway, porta 8080)
