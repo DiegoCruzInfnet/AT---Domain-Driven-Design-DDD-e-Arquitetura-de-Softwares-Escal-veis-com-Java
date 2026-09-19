@@ -24,6 +24,7 @@ spring:
     template:
       observation-enabled: true
     listener:
+      concurrency: 3
       observation-enabled: true
 management:
   endpoints:
