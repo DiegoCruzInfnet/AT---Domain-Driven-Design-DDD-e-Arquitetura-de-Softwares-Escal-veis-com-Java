@@ -26,7 +26,7 @@ public class ContratoController {
         return ContratoResponse.from(c);
     }
     @GetMapping("/{id}")
-    public ContratoResponse buscar(@RequestHeader(value="X-Correlation-Id", required=false) String correlationId, @PathVariable UUID id) {
+    public ContratoResponse buscar(@RequestHeader(value="X-Correlation-Id", required=false) String correlationId, @PathVariable("id") UUID id) {
         log.info("http.contrato.buscar correlationId={} contratoId={}", correlationId, id);
         return ContratoResponse.from(service.buscar(id));
     }
@@ -34,5 +34,31 @@ public class ContratoController {
     public List<ContratoResponse> listar(@RequestHeader(value="X-Correlation-Id", required=false) String correlationId) {
         log.info("http.contrato.listar correlationId={}", correlationId);
         return service.listar().stream().map(ContratoResponse::from).toList();
+    }
+
+    @PostMapping("/{id}/entrega") @ResponseStatus(HttpStatus.OK)
+    public ContratoResponse registrarEntrega(@RequestHeader(value="X-Correlation-Id", required=false) String correlationId,
+                                            @PathVariable("id") UUID id) {
+        log.info("http.contrato.entrega correlationId={} contratoId={}", correlationId, id);
+        var c = service.registrarEntrega(id);
+        log.info("http.contrato.entrega.response correlationId={} contratoId={} status={}", correlationId, c.id(), c.status());
+        return ContratoResponse.from(c);
+}
+    @PostMapping("/{id}/conclusao") @ResponseStatus(HttpStatus.OK)
+    public ContratoResponse concluir(@RequestHeader(value="X-Correlation-Id", required=false) String correlationId,
+                                    @PathVariable("id") UUID id) {
+        log.info("http.contrato.conclusao correlationId={} contratoId={}", correlationId, id);
+        var c = service.concluir(id);
+        log.info("http.contrato.conclusao.response correlationId={} contratoId={} status={}", correlationId, c.id(), c.status());
+        return ContratoResponse.from(c);
+    }
+
+    @PostMapping("/{id}/cancelamento") @ResponseStatus(HttpStatus.OK)
+    public ContratoResponse cancelar(@RequestHeader(value="X-Correlation-Id", required=false) String correlationId,
+                                    @PathVariable("id") UUID id) {
+        log.info("http.contrato.cancelamento correlationId={} contratoId={}", correlationId, id);
+        var c = service.cancelar(id);
+        log.info("http.contrato.cancelamento.response correlationId={} contratoId={} status={}", correlationId, c.id(), c.status());
+        return ContratoResponse.from(c);
     }
 }

@@ -1,0 +1,1186 @@
+2026-09-17T11:08:46.412-03:00  INFO 2560 --- [reputacao-service] [main] [                                                 ] b.c.f.reputacao.ReputacaoApplication     : Starting ReputacaoApplication using Java 21.0.8 with PID 2560 (D:\Faculdade\TPs e ATs\8 semestre\Domain-Driven Design (DDD) e Arquitetura de Softwares Escaláveis com Java\AT\freela-marketplace-assessment\reputacao-service\target\classes started by diego in D:\Faculdade\TPs e ATs\8 semestre\Domain-Driven Design (DDD) e Arquitetura de Softwares Escaláveis com Java\AT\freela-marketplace-assessment\reputacao-service)
+2026-09-17T11:08:46.421-03:00  INFO 2560 --- [reputacao-service] [main] [                                                 ] b.c.f.reputacao.ReputacaoApplication     : No active profile set, falling back to 1 default profile: "default"
+2026-09-17T11:08:47.290-03:00  INFO 2560 --- [reputacao-service] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-17T11:08:47.428-03:00  INFO 2560 --- [reputacao-service] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 128 ms. Found 2 JPA repository interfaces.
+2026-09-17T11:08:47.801-03:00  INFO 2560 --- [reputacao-service] [main] [                                                 ] o.s.cloud.context.scope.GenericScope     : BeanFactory id=d0cb7444-3294-349b-8e60-cd7c3f95fc92
+2026-09-17T11:08:48.214-03:00  INFO 2560 --- [reputacao-service] [main] [                                                 ] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8083 (http)
+2026-09-17T11:08:48.231-03:00  INFO 2560 --- [reputacao-service] [main] [                                                 ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-17T11:08:48.232-03:00  INFO 2560 --- [reputacao-service] [main] [                                                 ] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-09-17T11:08:48.323-03:00  INFO 2560 --- [reputacao-service] [main] [                                                 ] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1861 ms
+2026-09-17T11:08:48.879-03:00  INFO 2560 --- [reputacao-service] [main] [                                                 ] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-09-17T11:08:48.931-03:00  INFO 2560 --- [reputacao-service] [main] [                                                 ] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-09-17T11:08:49.360-03:00  INFO 2560 --- [reputacao-service] [main] [                                                 ] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-17T11:08:49.393-03:00  INFO 2560 --- [reputacao-service] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-17T11:08:49.544-03:00  INFO 2560 --- [reputacao-service] [main] [                                                 ] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@77acc95a
+2026-09-17T11:08:49.545-03:00  INFO 2560 --- [reputacao-service] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-17T11:08:49.619-03:00  INFO 2560 --- [reputacao-service] [main] [                                                 ] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/reputacao_db]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 16.13
+	Default catalog/schema: reputacao_db/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-17T11:08:50.606-03:00  INFO 2560 --- [reputacao-service] [main] [                                                 ] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-17T11:08:50.684-03:00  INFO 2560 --- [reputacao-service] [main] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-17T11:08:50.773-03:00  INFO 2560 --- [reputacao-service] [main] [                                                 ] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-09-17T11:08:52.383-03:00  INFO 2560 --- [reputacao-service] [main] [                                                 ] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2026-09-17T11:08:53.606-03:00  INFO 2560 --- [reputacao-service] [main] [                                                 ] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2026-09-17T11:08:53.624-03:00  INFO 2560 --- [reputacao-service] [main] [                                                 ] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestClient.
+2026-09-17T11:08:53.665-03:00  WARN 2560 --- [reputacao-service] [main] [                                                 ] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-09-17T11:08:53.673-03:00  INFO 2560 --- [reputacao-service] [main] [                                                 ] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2026-09-17T11:08:53.792-03:00  INFO 2560 --- [reputacao-service] [main] [                                                 ] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-09-17T11:08:53.821-03:00  INFO 2560 --- [reputacao-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-09-17T11:08:53.825-03:00  INFO 2560 --- [reputacao-service] [main] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-17T11:08:53.834-03:00  INFO 2560 --- [reputacao-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-09-17T11:08:53.834-03:00  INFO 2560 --- [reputacao-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-09-17T11:08:53.834-03:00  INFO 2560 --- [reputacao-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-09-17T11:08:53.835-03:00  INFO 2560 --- [reputacao-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-09-17T11:08:53.835-03:00  INFO 2560 --- [reputacao-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-09-17T11:08:53.835-03:00  INFO 2560 --- [reputacao-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-09-17T11:08:53.835-03:00  INFO 2560 --- [reputacao-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-09-17T11:08:54.153-03:00  INFO 2560 --- [reputacao-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-09-17T11:08:54.156-03:00  INFO 2560 --- [reputacao-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-09-17T11:08:54.158-03:00  INFO 2560 --- [reputacao-service] [main] [                                                 ] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-09-17T11:08:54.159-03:00  INFO 2560 --- [reputacao-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1789654134159 with initial instances count: 3
+2026-09-17T11:08:54.163-03:00  INFO 2560 --- [reputacao-service] [main] [                                                 ] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application REPUTACAO-SERVICE with eureka with status UP
+2026-09-17T11:08:54.164-03:00  INFO 2560 --- [reputacao-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1789654134164, current=UP, previous=STARTING]
+2026-09-17T11:08:54.165-03:00  INFO 2560 --- [reputacao-service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_REPUTACAO-SERVICE/localhost:reputacao-service:8083: registering service...
+2026-09-17T11:08:54.176-03:00  INFO 2560 --- [reputacao-service] [main] [                                                 ] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8083 (http) with context path '/'
+2026-09-17T11:08:54.177-03:00  INFO 2560 --- [reputacao-service] [main] [                                                 ] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8083
+2026-09-17T11:08:54.201-03:00  INFO 2560 --- [reputacao-service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_REPUTACAO-SERVICE/localhost:reputacao-service:8083 - registration status: 204
+2026-09-17T11:08:55.198-03:00  INFO 2560 --- [reputacao-service] [main] [                                                 ] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2026-09-17T11:08:55.244-03:00  INFO 2560 --- [reputacao-service] [main] [                                                 ] o.a.kafka.common.config.AbstractConfig   : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-reputacao-service-1
+	client.rack = 
+	config.providers = []
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = reputacao-service
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metadata.recovery.rebootstrap.trigger.ms = 300000
+	metadata.recovery.strategy = rebootstrap
+	metric.reporters = [org.apache.kafka.common.metrics.JmxReporter]
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.assertion.algorithm = RS256
+	sasl.oauthbearer.assertion.claim.aud = null
+	sasl.oauthbearer.assertion.claim.exp.seconds = 300
+	sasl.oauthbearer.assertion.claim.iss = null
+	sasl.oauthbearer.assertion.claim.jti.include = false
+	sasl.oauthbearer.assertion.claim.nbf.seconds = 60
+	sasl.oauthbearer.assertion.claim.sub = null
+	sasl.oauthbearer.assertion.file = null
+	sasl.oauthbearer.assertion.private.key.file = null
+	sasl.oauthbearer.assertion.private.key.passphrase = null
+	sasl.oauthbearer.assertion.template.file = null
+	sasl.oauthbearer.client.credentials.client.id = null
+	sasl.oauthbearer.client.credentials.client.secret = null
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = []
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.jwt.retriever.class = class org.apache.kafka.common.security.oauthbearer.DefaultJwtRetriever
+	sasl.oauthbearer.jwt.validator.class = class org.apache.kafka.common.security.oauthbearer.DefaultJwtValidator
+	sasl.oauthbearer.scope = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	share.acknowledgement.mode = implicit
+	share.acquire.mode = BATCH_OPTIMIZED
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = []
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2026-09-17T11:08:55.286-03:00  INFO 2560 --- [reputacao-service] [main] [                                                 ] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2026-09-17T11:08:55.419-03:00  INFO 2560 --- [reputacao-service] [main] [                                                 ] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 4.2.1
+2026-09-17T11:08:55.419-03:00  INFO 2560 --- [reputacao-service] [main] [                                                 ] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 92f61c44867f39dc
+2026-09-17T11:08:55.420-03:00  INFO 2560 --- [reputacao-service] [main] [                                                 ] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1789654135417
+2026-09-17T11:08:55.430-03:00  INFO 2560 --- [reputacao-service] [main] [                                                 ] o.a.k.c.c.i.ClassicKafkaConsumer         : [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Subscribed to topic(s): contrato-eventos
+2026-09-17T11:08:55.445-03:00  INFO 2560 --- [reputacao-service] [main] [                                                 ] b.c.f.reputacao.ReputacaoApplication     : Started ReputacaoApplication in 10.61 seconds (process running for 11.497)
+2026-09-17T11:08:55.869-03:00  INFO 2560 --- [reputacao-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [                                                 ] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Cluster ID: 5L6g3nShT-eMCtK--X86sw
+2026-09-17T11:08:55.872-03:00  INFO 2560 --- [reputacao-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [                                                 ] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null isFenced: false)
+2026-09-17T11:08:55.875-03:00  INFO 2560 --- [reputacao-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [                                                 ] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] (Re-)joining group
+2026-09-17T11:08:55.894-03:00  INFO 2560 --- [reputacao-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [                                                 ] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Request joining group due to: need to re-join with the given member-id: consumer-reputacao-service-1-762363f2-f04e-40dc-8664-45d0d43ddda1
+2026-09-17T11:08:55.894-03:00  INFO 2560 --- [reputacao-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [                                                 ] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] (Re-)joining group
+2026-09-17T11:08:55.899-03:00  INFO 2560 --- [reputacao-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [                                                 ] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Successfully joined group with generation Generation{generationId=5, memberId='consumer-reputacao-service-1-762363f2-f04e-40dc-8664-45d0d43ddda1', protocol='range'}
+2026-09-17T11:08:55.907-03:00  INFO 2560 --- [reputacao-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [                                                 ] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Finished assignment for group at generation 5: {consumer-reputacao-service-1-762363f2-f04e-40dc-8664-45d0d43ddda1=Assignment(partitions=[contrato-eventos-0])}
+2026-09-17T11:08:55.914-03:00  INFO 2560 --- [reputacao-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [                                                 ] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Successfully synced group in generation Generation{generationId=5, memberId='consumer-reputacao-service-1-762363f2-f04e-40dc-8664-45d0d43ddda1', protocol='range'}
+2026-09-17T11:08:55.915-03:00  INFO 2560 --- [reputacao-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [                                                 ] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Notifying assignor about the new Assignment(partitions=[contrato-eventos-0])
+2026-09-17T11:08:55.918-03:00  INFO 2560 --- [reputacao-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [                                                 ] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Adding newly assigned partitions: [contrato-eventos-0]
+2026-09-17T11:08:55.928-03:00  INFO 2560 --- [reputacao-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [                                                 ] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition contrato-eventos-0 to the committed offset FetchPosition{offset=10, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null isFenced: false)], epoch=0}}
+2026-09-17T11:08:55.932-03:00  INFO 2560 --- [reputacao-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [                                                 ] o.s.k.l.KafkaMessageListenerContainer    : reputacao-service: partitions assigned: [contrato-eventos-0]
+2026-09-17T11:13:53.846-03:00  INFO 2560 --- [reputacao-service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-17T11:18:53.859-03:00  INFO 2560 --- [reputacao-service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-17T11:23:53.862-03:00  INFO 2560 --- [reputacao-service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-17T11:28:53.874-03:00  INFO 2560 --- [reputacao-service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-17T11:30:21.800-03:00  INFO 2560 --- [reputacao-service] [SpringApplicationShutdownHook] [                                                 ] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application REPUTACAO-SERVICE with eureka with status DOWN
+2026-09-17T11:30:21.800-03:00  INFO 2560 --- [reputacao-service] [SpringApplicationShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1789655421800, current=DOWN, previous=UP]
+2026-09-17T11:30:21.801-03:00  INFO 2560 --- [reputacao-service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_REPUTACAO-SERVICE/localhost:reputacao-service:8083: registering service...
+2026-09-17T11:30:21.805-03:00  INFO 2560 --- [reputacao-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [                                                 ] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Revoke previously assigned partitions [contrato-eventos-0]
+2026-09-17T11:30:21.806-03:00  INFO 2560 --- [reputacao-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [                                                 ] o.s.k.l.KafkaMessageListenerContainer    : reputacao-service: partitions revoked: [contrato-eventos-0]
+2026-09-17T11:30:21.808-03:00  INFO 2560 --- [reputacao-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [                                                 ] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Member consumer-reputacao-service-1-762363f2-f04e-40dc-8664-45d0d43ddda1 sending LeaveGroup request to coordinator localhost:9092 (id: 2147483646 rack: null isFenced: false) due to the consumer unsubscribed from all topics
+2026-09-17T11:30:21.809-03:00  INFO 2560 --- [reputacao-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [                                                 ] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Resetting generation and member id due to: consumer pro-actively leaving the group
+2026-09-17T11:30:21.809-03:00  INFO 2560 --- [reputacao-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [                                                 ] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Request joining group due to: consumer pro-actively leaving the group
+2026-09-17T11:30:21.810-03:00  INFO 2560 --- [reputacao-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [                                                 ] o.a.k.c.c.i.ClassicKafkaConsumer         : [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Unsubscribed all topics or patterns and assigned partitions
+2026-09-17T11:30:21.812-03:00  INFO 2560 --- [reputacao-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [                                                 ] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Resetting generation and member id due to: consumer pro-actively leaving the group
+2026-09-17T11:30:21.813-03:00  INFO 2560 --- [reputacao-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [                                                 ] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Request joining group due to: consumer pro-actively leaving the group
+2026-09-17T11:30:21.815-03:00  INFO 2560 --- [reputacao-service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_REPUTACAO-SERVICE/localhost:reputacao-service:8083 - registration status: 204
+2026-09-17T11:30:22.008-03:00  INFO 2560 --- [reputacao-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [                                                 ] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2026-09-17T11:30:22.009-03:00  INFO 2560 --- [reputacao-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [                                                 ] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2026-09-17T11:30:22.009-03:00  INFO 2560 --- [reputacao-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [                                                 ] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2026-09-17T11:30:22.009-03:00  INFO 2560 --- [reputacao-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [                                                 ] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2026-09-17T11:30:22.018-03:00  INFO 2560 --- [reputacao-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [                                                 ] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-reputacao-service-1 unregistered
+2026-09-17T11:30:22.019-03:00  INFO 2560 --- [reputacao-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [                                                 ] o.s.k.l.KafkaMessageListenerContainer    : reputacao-service: Consumer stopped
+2026-09-17T11:30:22.022-03:00  INFO 2560 --- [reputacao-service] [SpringApplicationShutdownHook] [                                                 ] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-17T11:30:22.038-03:00  INFO 2560 --- [reputacao-service] [tomcat-shutdown] [                                                 ] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-09-17T11:30:22.048-03:00  INFO 2560 --- [reputacao-service] [SpringApplicationShutdownHook] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-09-17T11:30:22.052-03:00  INFO 2560 --- [reputacao-service] [SpringApplicationShutdownHook] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-09-17T11:30:22.058-03:00  INFO 2560 --- [reputacao-service] [SpringApplicationShutdownHook] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-09-17T11:30:23.071-03:00  INFO 2560 --- [reputacao-service] [SpringApplicationShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2026-09-17T11:30:26.084-03:00  WARN 2560 --- [reputacao-service] [DiscoveryClient-%d] [                                                 ] c.netflix.discovery.TimedSupervisorTask  : task supervisor shutting down, can't accept the task
+2026-09-17T11:30:26.084-03:00  INFO 2560 --- [reputacao-service] [SpringApplicationShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2026-09-17T11:30:26.088-03:00  INFO 2560 --- [reputacao-service] [SpringApplicationShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_REPUTACAO-SERVICE/localhost:reputacao-service:8083 - deregister  status: 200
+2026-09-17T11:30:26.089-03:00  INFO 2560 --- [reputacao-service] [SpringApplicationShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2026-09-17 11:36:40.548 INFO  service=reputacao-service correlationId= thread=main logger=b.c.f.reputacao.ReputacaoApplication - Starting ReputacaoApplication using Java 21.0.8 with PID 21720 (D:\Faculdade\TPs e ATs\8 semestre\Domain-Driven Design (DDD) e Arquitetura de Softwares Escaláveis com Java\AT\freela-marketplace-assessment\reputacao-service\target\classes started by diego in D:\Faculdade\TPs e ATs\8 semestre\Domain-Driven Design (DDD) e Arquitetura de Softwares Escaláveis com Java\AT\freela-marketplace-assessment\reputacao-service)
+2026-09-17 11:36:40.551 INFO  service=reputacao-service correlationId= thread=main logger=b.c.f.reputacao.ReputacaoApplication - No active profile set, falling back to 1 default profile: "default"
+2026-09-17 11:36:41.397 INFO  service=reputacao-service correlationId= thread=main logger=o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-17 11:36:41.538 INFO  service=reputacao-service correlationId= thread=main logger=o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 130 ms. Found 2 JPA repository interfaces.
+2026-09-17 11:36:41.882 INFO  service=reputacao-service correlationId= thread=main logger=o.s.cloud.context.scope.GenericScope - BeanFactory id=d0cb7444-3294-349b-8e60-cd7c3f95fc92
+2026-09-17 11:36:42.320 INFO  service=reputacao-service correlationId= thread=main logger=o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8083 (http)
+2026-09-17 11:36:42.338 INFO  service=reputacao-service correlationId= thread=main logger=o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-09-17 11:36:42.338 INFO  service=reputacao-service correlationId= thread=main logger=o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-09-17 11:36:42.441 INFO  service=reputacao-service correlationId= thread=main logger=o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1841 ms
+2026-09-17 11:36:43.087 INFO  service=reputacao-service correlationId= thread=main logger=org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-09-17 11:36:43.176 INFO  service=reputacao-service correlationId= thread=main logger=org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-09-17 11:36:43.819 INFO  service=reputacao-service correlationId= thread=main logger=o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-17 11:36:43.889 INFO  service=reputacao-service correlationId= thread=main logger=com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-09-17 11:36:44.133 INFO  service=reputacao-service correlationId= thread=main logger=com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7e7987b8
+2026-09-17 11:36:44.137 INFO  service=reputacao-service correlationId= thread=main logger=com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-09-17 11:36:44.243 INFO  service=reputacao-service correlationId= thread=main logger=o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/reputacao_db]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 16.13
+	Default catalog/schema: reputacao_db/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-17 11:36:45.661 INFO  service=reputacao-service correlationId= thread=main logger=org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-17 11:36:45.737 INFO  service=reputacao-service correlationId= thread=main logger=o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-17 11:36:45.835 INFO  service=reputacao-service correlationId= thread=main logger=o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-09-17 11:36:47.520 INFO  service=reputacao-service correlationId= thread=main logger=o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2026-09-17 11:36:48.797 INFO  service=reputacao-service correlationId= thread=main logger=o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2026-09-17 11:36:48.819 INFO  service=reputacao-service correlationId= thread=main logger=o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestClient.
+2026-09-17 11:36:48.870 WARN  service=reputacao-service correlationId= thread=main logger=o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-09-17 11:36:48.879 INFO  service=reputacao-service correlationId= thread=main logger=o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoints beneath base path '/actuator'
+2026-09-17 11:36:48.998 INFO  service=reputacao-service correlationId= thread=main logger=o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-09-17 11:36:49.022 INFO  service=reputacao-service correlationId= thread=main logger=c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2026-09-17 11:36:49.026 INFO  service=reputacao-service correlationId= thread=main logger=c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-09-17 11:36:49.037 INFO  service=reputacao-service correlationId= thread=main logger=c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2026-09-17 11:36:49.038 INFO  service=reputacao-service correlationId= thread=main logger=c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2026-09-17 11:36:49.038 INFO  service=reputacao-service correlationId= thread=main logger=c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2026-09-17 11:36:49.038 INFO  service=reputacao-service correlationId= thread=main logger=c.netflix.discovery.DiscoveryClient - Application is null : false
+2026-09-17 11:36:49.038 INFO  service=reputacao-service correlationId= thread=main logger=c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2026-09-17 11:36:49.038 INFO  service=reputacao-service correlationId= thread=main logger=c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2026-09-17 11:36:49.038 INFO  service=reputacao-service correlationId= thread=main logger=c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2026-09-17 11:36:49.371 INFO  service=reputacao-service correlationId= thread=main logger=c.netflix.discovery.DiscoveryClient - The response status is 200
+2026-09-17 11:36:49.373 INFO  service=reputacao-service correlationId= thread=main logger=c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2026-09-17 11:36:49.375 INFO  service=reputacao-service correlationId= thread=main logger=c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-09-17 11:36:49.378 INFO  service=reputacao-service correlationId= thread=main logger=c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1789655809377 with initial instances count: 3
+2026-09-17 11:36:49.382 INFO  service=reputacao-service correlationId= thread=main logger=o.s.c.n.e.s.EurekaServiceRegistry - Registering application REPUTACAO-SERVICE with eureka with status UP
+2026-09-17 11:36:49.383 INFO  service=reputacao-service correlationId= thread=main logger=c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1789655809383, current=UP, previous=STARTING]
+2026-09-17 11:36:49.386 INFO  service=reputacao-service correlationId= thread=DiscoveryClient-InstanceInfoReplicator-%d logger=c.netflix.discovery.DiscoveryClient - DiscoveryClient_REPUTACAO-SERVICE/localhost:reputacao-service:8083: registering service...
+2026-09-17 11:36:49.401 INFO  service=reputacao-service correlationId= thread=main logger=o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8083 (http) with context path '/'
+2026-09-17 11:36:49.402 INFO  service=reputacao-service correlationId= thread=main logger=o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8083
+2026-09-17 11:36:49.434 INFO  service=reputacao-service correlationId= thread=DiscoveryClient-InstanceInfoReplicator-%d logger=c.netflix.discovery.DiscoveryClient - DiscoveryClient_REPUTACAO-SERVICE/localhost:reputacao-service:8083 - registration status: 204
+2026-09-17 11:36:50.417 INFO  service=reputacao-service correlationId= thread=main logger=o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2026-09-17 11:36:50.475 INFO  service=reputacao-service correlationId= thread=main logger=o.a.k.common.config.AbstractConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-reputacao-service-1
+	client.rack = 
+	config.providers = []
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = reputacao-service
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metadata.recovery.rebootstrap.trigger.ms = 300000
+	metadata.recovery.strategy = rebootstrap
+	metric.reporters = [org.apache.kafka.common.metrics.JmxReporter]
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.assertion.algorithm = RS256
+	sasl.oauthbearer.assertion.claim.aud = null
+	sasl.oauthbearer.assertion.claim.exp.seconds = 300
+	sasl.oauthbearer.assertion.claim.iss = null
+	sasl.oauthbearer.assertion.claim.jti.include = false
+	sasl.oauthbearer.assertion.claim.nbf.seconds = 60
+	sasl.oauthbearer.assertion.claim.sub = null
+	sasl.oauthbearer.assertion.file = null
+	sasl.oauthbearer.assertion.private.key.file = null
+	sasl.oauthbearer.assertion.private.key.passphrase = null
+	sasl.oauthbearer.assertion.template.file = null
+	sasl.oauthbearer.client.credentials.client.id = null
+	sasl.oauthbearer.client.credentials.client.secret = null
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = []
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.jwt.retriever.class = class org.apache.kafka.common.security.oauthbearer.DefaultJwtRetriever
+	sasl.oauthbearer.jwt.validator.class = class org.apache.kafka.common.security.oauthbearer.DefaultJwtValidator
+	sasl.oauthbearer.scope = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	share.acknowledgement.mode = implicit
+	share.acquire.mode = BATCH_OPTIMIZED
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = []
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2026-09-17 11:36:50.527 INFO  service=reputacao-service correlationId= thread=main logger=o.a.k.c.t.i.KafkaMetricsCollector - initializing Kafka metrics collector
+2026-09-17 11:36:50.703 INFO  service=reputacao-service correlationId= thread=main logger=o.a.kafka.common.utils.AppInfoParser - Kafka version: 4.2.1
+2026-09-17 11:36:50.703 INFO  service=reputacao-service correlationId= thread=main logger=o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 92f61c44867f39dc
+2026-09-17 11:36:50.703 INFO  service=reputacao-service correlationId= thread=main logger=o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1789655810692
+2026-09-17 11:36:50.717 INFO  service=reputacao-service correlationId= thread=main logger=o.a.k.c.c.i.ClassicKafkaConsumer - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Subscribed to topic(s): contrato-eventos
+2026-09-17 11:36:50.735 INFO  service=reputacao-service correlationId= thread=main logger=b.c.f.reputacao.ReputacaoApplication - Started ReputacaoApplication in 11.748 seconds (process running for 12.411)
+2026-09-17 11:36:51.142 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Cluster ID: 5L6g3nShT-eMCtK--X86sw
+2026-09-17 11:36:51.145 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null isFenced: false)
+2026-09-17 11:36:51.148 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] (Re-)joining group
+2026-09-17 11:36:51.167 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Request joining group due to: need to re-join with the given member-id: consumer-reputacao-service-1-39220547-1796-4544-8698-5947a2c02ac9
+2026-09-17 11:36:51.167 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] (Re-)joining group
+2026-09-17 11:36:51.172 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Successfully joined group with generation Generation{generationId=7, memberId='consumer-reputacao-service-1-39220547-1796-4544-8698-5947a2c02ac9', protocol='range'}
+2026-09-17 11:36:51.179 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Finished assignment for group at generation 7: {consumer-reputacao-service-1-39220547-1796-4544-8698-5947a2c02ac9=Assignment(partitions=[contrato-eventos-0])}
+2026-09-17 11:36:51.186 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Successfully synced group in generation Generation{generationId=7, memberId='consumer-reputacao-service-1-39220547-1796-4544-8698-5947a2c02ac9', protocol='range'}
+2026-09-17 11:36:51.187 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Notifying assignor about the new Assignment(partitions=[contrato-eventos-0])
+2026-09-17 11:36:51.190 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Adding newly assigned partitions: [contrato-eventos-0]
+2026-09-17 11:36:51.200 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.a.k.c.c.internals.ConsumerUtils - Setting offset for partition contrato-eventos-0 to the committed offset FetchPosition{offset=10, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null isFenced: false)], epoch=0}}
+2026-09-17 11:36:51.204 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.s.k.l.KafkaMessageListenerContainer - reputacao-service: partitions assigned: [contrato-eventos-0]
+2026-09-17 11:38:18.058 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.a.k.common.config.AbstractConfig - AdminClientConfig values: 
+	bootstrap.controllers = []
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = reputacao-service-admin-0
+	config.providers = []
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	enable.metrics.push = false
+	metadata.max.age.ms = 300000
+	metadata.recovery.rebootstrap.trigger.ms = 300000
+	metadata.recovery.strategy = rebootstrap
+	metric.reporters = [org.apache.kafka.common.metrics.JmxReporter]
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.assertion.algorithm = RS256
+	sasl.oauthbearer.assertion.claim.aud = null
+	sasl.oauthbearer.assertion.claim.exp.seconds = 300
+	sasl.oauthbearer.assertion.claim.iss = null
+	sasl.oauthbearer.assertion.claim.jti.include = false
+	sasl.oauthbearer.assertion.claim.nbf.seconds = 60
+	sasl.oauthbearer.assertion.claim.sub = null
+	sasl.oauthbearer.assertion.file = null
+	sasl.oauthbearer.assertion.private.key.file = null
+	sasl.oauthbearer.assertion.private.key.passphrase = null
+	sasl.oauthbearer.assertion.template.file = null
+	sasl.oauthbearer.client.credentials.client.id = null
+	sasl.oauthbearer.client.credentials.client.secret = null
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = []
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.jwt.retriever.class = class org.apache.kafka.common.security.oauthbearer.DefaultJwtRetriever
+	sasl.oauthbearer.jwt.validator.class = class org.apache.kafka.common.security.oauthbearer.DefaultJwtValidator
+	sasl.oauthbearer.scope = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = []
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2026-09-17 11:38:18.101 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.a.kafka.common.utils.AppInfoParser - Kafka version: 4.2.1
+2026-09-17 11:38:18.101 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 92f61c44867f39dc
+2026-09-17 11:38:18.102 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1789655898101
+2026-09-17 11:38:18.131 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2026-09-17 11:38:18.132 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2026-09-17 11:38:18.133 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2026-09-17 11:38:18.134 INFO  service=reputacao-service correlationId= thread=kafka-admin-client-thread | reputacao-service-admin-0 logger=o.a.kafka.common.utils.AppInfoParser - App info kafka.admin.client for reputacao-service-admin-0 unregistered
+2026-09-17 11:38:18.140 INFO  service=reputacao-service correlationId= thread=kafka-admin-client-thread | reputacao-service-admin-0 logger=o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2026-09-17 11:38:18.141 INFO  service=reputacao-service correlationId= thread=kafka-admin-client-thread | reputacao-service-admin-0 logger=o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2026-09-17 11:38:18.141 INFO  service=reputacao-service correlationId= thread=kafka-admin-client-thread | reputacao-service-admin-0 logger=o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2026-09-17 11:38:18.719 INFO  service=reputacao-service correlationId=a121bb6c-a8ec-40c1-8ad2-4ba6c4a70d7d thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=b.c.f.r.ContratoEventoListener - reputacao.evento.recebido eventId=d4aaaa78-47e8-44aa-9aa6-64e44339555d contratoId=b4f03a59-b023-46df-9e6a-92e4460dc040 eventType=ContratoCriado
+2026-09-17 11:38:18.720 INFO  service=reputacao-service correlationId=a121bb6c-a8ec-40c1-8ad2-4ba6c4a70d7d thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=b.c.f.r.ContratoEventoListener - reputacao.evento.ignorado eventId=d4aaaa78-47e8-44aa-9aa6-64e44339555d eventType=ContratoCriado (sem impacto na reputação)
+2026-09-17 11:38:18.751 INFO  service=reputacao-service correlationId=a121bb6c-a8ec-40c1-8ad2-4ba6c4a70d7d thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=b.c.f.r.ContratoEventoListener - reputacao.evento.processado eventId=d4aaaa78-47e8-44aa-9aa6-64e44339555d contratoId=b4f03a59-b023-46df-9e6a-92e4460dc040
+2026-09-17 11:38:46.287 INFO  service=reputacao-service correlationId=d112bb8b-4974-4b67-a7b6-a853d576c6f4 thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=b.c.f.r.ContratoEventoListener - reputacao.evento.recebido eventId=f64fa30d-eabe-4abb-9a00-2db668b94711 contratoId=b4f03a59-b023-46df-9e6a-92e4460dc040 eventType=EntregaRegistrada
+2026-09-17 11:38:46.288 INFO  service=reputacao-service correlationId=d112bb8b-4974-4b67-a7b6-a853d576c6f4 thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=b.c.f.r.ContratoEventoListener - reputacao.evento.ignorado eventId=f64fa30d-eabe-4abb-9a00-2db668b94711 eventType=EntregaRegistrada (sem impacto na reputação)
+2026-09-17 11:38:46.291 INFO  service=reputacao-service correlationId=d112bb8b-4974-4b67-a7b6-a853d576c6f4 thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=b.c.f.r.ContratoEventoListener - reputacao.evento.processado eventId=f64fa30d-eabe-4abb-9a00-2db668b94711 contratoId=b4f03a59-b023-46df-9e6a-92e4460dc040
+2026-09-17 11:39:02.415 INFO  service=reputacao-service correlationId=sem-correlation-id thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=b.c.f.r.ContratoEventoListener - reputacao.evento.recebido eventId=7517d56d-7509-4591-8b9d-da882cf7fce4 contratoId=b4f03a59-b023-46df-9e6a-92e4460dc040 eventType=ContratoConcluido
+2026-09-17 11:39:02.417 INFO  service=reputacao-service correlationId=sem-correlation-id thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=b.c.f.reputacao.ReputacaoService - reputacao.atualizacao.inicio contratoId=b4f03a59-b023-46df-9e6a-92e4460dc040 freelancerId=11112222-1111-2222-1111-222211112222 valor=444
+2026-09-17 11:39:02.427 INFO  service=reputacao-service correlationId=sem-correlation-id thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=b.c.f.reputacao.ReputacaoService - reputacao.atualizacao.sucesso contratoId=b4f03a59-b023-46df-9e6a-92e4460dc040 freelancerId=11112222-1111-2222-1111-222211112222 contratosConcluidos=1 valorTotal=444
+2026-09-17 11:39:02.431 INFO  service=reputacao-service correlationId=sem-correlation-id thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=b.c.f.r.ContratoEventoListener - reputacao.evento.processado eventId=7517d56d-7509-4591-8b9d-da882cf7fce4 contratoId=b4f03a59-b023-46df-9e6a-92e4460dc040
+2026-09-17 11:41:49.052 INFO  service=reputacao-service correlationId= thread=AsyncResolver-bootstrap-executor-%d logger=c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-09-17 11:46:45.544 INFO  service=reputacao-service correlationId=sem-correlation-id thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=b.c.f.r.ContratoEventoListener - reputacao.evento.recebido eventId=4591f927-0cee-465c-8214-e20415c3c07a contratoId=eb7e7dae-fb74-4c77-8921-d6395b467b60 eventType=ContratoCriado
+2026-09-17 11:46:45.545 INFO  service=reputacao-service correlationId=sem-correlation-id thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=b.c.f.r.ContratoEventoListener - reputacao.evento.ignorado eventId=4591f927-0cee-465c-8214-e20415c3c07a eventType=ContratoCriado (sem impacto na reputação)
+2026-09-17 11:46:45.548 INFO  service=reputacao-service correlationId=sem-correlation-id thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=b.c.f.r.ContratoEventoListener - reputacao.evento.processado eventId=4591f927-0cee-465c-8214-e20415c3c07a contratoId=eb7e7dae-fb74-4c77-8921-d6395b467b60
+2026-09-17 11:46:49.066 INFO  service=reputacao-service correlationId= thread=AsyncResolver-bootstrap-executor-%d logger=c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-09-17 11:51:49.068 INFO  service=reputacao-service correlationId= thread=AsyncResolver-bootstrap-executor-%d logger=c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-09-17 11:56:47.521 INFO  service=reputacao-service correlationId=sem-correlation-id thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=b.c.f.r.ContratoEventoListener - reputacao.evento.recebido eventId=be153710-9b88-4769-83f7-c96c50d81595 contratoId=33ac23b3-a6e3-4d59-8054-9547b35d26f5 eventType=ContratoCriado
+2026-09-17 11:56:47.522 INFO  service=reputacao-service correlationId=sem-correlation-id thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=b.c.f.r.ContratoEventoListener - reputacao.evento.ignorado eventId=be153710-9b88-4769-83f7-c96c50d81595 eventType=ContratoCriado (sem impacto na reputação)
+2026-09-17 11:56:47.525 INFO  service=reputacao-service correlationId=sem-correlation-id thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=b.c.f.r.ContratoEventoListener - reputacao.evento.processado eventId=be153710-9b88-4769-83f7-c96c50d81595 contratoId=33ac23b3-a6e3-4d59-8054-9547b35d26f5
+2026-09-17 11:56:49.071 INFO  service=reputacao-service correlationId= thread=AsyncResolver-bootstrap-executor-%d logger=c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-09-17 12:01:49.078 INFO  service=reputacao-service correlationId= thread=AsyncResolver-bootstrap-executor-%d logger=c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-09-17 12:06:49.083 INFO  service=reputacao-service correlationId= thread=AsyncResolver-bootstrap-executor-%d logger=c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-09-17 12:11:49.086 INFO  service=reputacao-service correlationId= thread=AsyncResolver-bootstrap-executor-%d logger=c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-09-17 12:15:16.488 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Node 2147483646 disconnected.
+2026-09-17 12:15:16.489 INFO  service=reputacao-service correlationId= thread=kafka-coordinator-heartbeat-thread | reputacao-service logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Node 1 disconnected.
+2026-09-17 12:15:16.491 INFO  service=reputacao-service correlationId= thread=kafka-coordinator-heartbeat-thread | reputacao-service logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Cancelled in-flight FETCH request with correlation id 5377 due to node 1 being disconnected (elapsed time since creation: 218ms, elapsed time since send: 218ms, throttle time: 0ms, request timeout: 30000ms)
+2026-09-17 12:15:16.492 INFO  service=reputacao-service correlationId= thread=kafka-coordinator-heartbeat-thread | reputacao-service logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Cancelled in-flight METADATA request with correlation id 5378 due to node 1 being disconnected (elapsed time since creation: 117ms, elapsed time since send: 117ms, throttle time: 0ms, request timeout: 30000ms)
+2026-09-17 12:15:16.493 INFO  service=reputacao-service correlationId= thread=kafka-coordinator-heartbeat-thread | reputacao-service logger=o.a.k.clients.FetchSessionHandler - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Error sending fetch request (sessionId=1232240907, epoch=4589) to node 1:
+org.apache.kafka.common.errors.DisconnectException
+2026-09-17 12:15:16.516 INFO  service=reputacao-service correlationId= thread=kafka-coordinator-heartbeat-thread | reputacao-service logger=o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Group coordinator localhost:9092 (id: 2147483646 rack: null isFenced: false) is unavailable or invalid due to cause: coordinator unavailable. isDisconnected: true. Rediscovery will be attempted.
+2026-09-17 12:15:16.617 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Node 1 disconnected.
+2026-09-17 12:15:16.617 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Cancelled in-flight API_VERSIONS request with correlation id 5379 due to node 1 being disconnected (elapsed time since creation: 1ms, elapsed time since send: 1ms, throttle time: 0ms, request timeout: 30000ms)
+2026-09-17 12:15:16.824 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Node 1 disconnected.
+2026-09-17 12:15:16.825 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Cancelled in-flight API_VERSIONS request with correlation id 5380 due to node 1 being disconnected (elapsed time since creation: 1ms, elapsed time since send: 1ms, throttle time: 0ms, request timeout: 30000ms)
+2026-09-17 12:15:17.228 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Node 1 disconnected.
+2026-09-17 12:15:17.229 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Cancelled in-flight API_VERSIONS request with correlation id 5381 due to node 1 being disconnected (elapsed time since creation: 1ms, elapsed time since send: 1ms, throttle time: 0ms, request timeout: 30000ms)
+2026-09-17 12:15:17.263 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Rebootstrapping with [localhost/127.0.0.1:9092]
+2026-09-17 12:15:17.266 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Node -1 disconnected.
+2026-09-17 12:15:17.266 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Cancelled in-flight API_VERSIONS request with correlation id 5382 due to node -1 being disconnected (elapsed time since creation: 1ms, elapsed time since send: 1ms, throttle time: 0ms, request timeout: 30000ms)
+2026-09-17 12:15:17.266 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:18.194 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Node -1 disconnected.
+2026-09-17 12:15:18.195 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:18.200 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:19.208 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Node -1 disconnected.
+2026-09-17 12:15:19.208 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:19.208 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:19.255 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Node 1 disconnected.
+2026-09-17 12:15:19.256 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:19.256 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.a.k.clients.FetchSessionHandler - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Error sending fetch request (sessionId=1232240907, epoch=INITIAL) to node 1:
+org.apache.kafka.common.errors.DisconnectException
+2026-09-17 12:15:20.210 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Node -1 disconnected.
+2026-09-17 12:15:20.210 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:20.210 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:21.081 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Node -1 disconnected.
+2026-09-17 12:15:21.081 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:21.082 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:21.221 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Rebootstrapping with [localhost/127.0.0.1:9092]
+2026-09-17 12:15:21.284 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Rebootstrapping with [localhost/127.0.0.1:9092]
+2026-09-17 12:15:21.489 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Rebootstrapping with [localhost/127.0.0.1:9092]
+2026-09-17 12:15:21.551 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Rebootstrapping with [localhost/127.0.0.1:9092]
+2026-09-17 12:15:22.005 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Rebootstrapping with [localhost/127.0.0.1:9092]
+2026-09-17 12:15:22.064 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Rebootstrapping with [localhost/127.0.0.1:9092]
+2026-09-17 12:15:22.880 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Node -1 disconnected.
+2026-09-17 12:15:22.881 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:22.881 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:23.883 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Node -1 disconnected.
+2026-09-17 12:15:23.883 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:23.883 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:24.259 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Node 1 disconnected.
+2026-09-17 12:15:24.259 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:24.260 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.a.k.clients.FetchSessionHandler - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Error sending fetch request (sessionId=1232240907, epoch=INITIAL) to node 1:
+org.apache.kafka.common.errors.DisconnectException
+2026-09-17 12:15:24.899 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Node -1 disconnected.
+2026-09-17 12:15:24.899 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:24.899 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:25.911 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Node -1 disconnected.
+2026-09-17 12:15:25.912 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:25.912 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:25.978 WARN  service=reputacao-service correlationId= thread=HikariPool-1:housekeeper logger=com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@8925726 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2026-09-17 12:15:26.066 WARN  service=reputacao-service correlationId= thread=HikariPool-1:housekeeper logger=com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@33f8d818 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2026-09-17 12:15:26.784 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Rebootstrapping with [localhost/127.0.0.1:9092]
+2026-09-17 12:15:26.847 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Node -1 disconnected.
+2026-09-17 12:15:26.847 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:26.848 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:27.862 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Node -1 disconnected.
+2026-09-17 12:15:27.863 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:27.863 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:28.733 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Rebootstrapping with [localhost/127.0.0.1:9092]
+2026-09-17 12:15:28.796 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Node -1 disconnected.
+2026-09-17 12:15:28.796 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:28.796 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:29.264 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Node 1 disconnected.
+2026-09-17 12:15:29.264 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:29.264 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.a.k.clients.FetchSessionHandler - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Error sending fetch request (sessionId=1232240907, epoch=INITIAL) to node 1:
+org.apache.kafka.common.errors.DisconnectException
+2026-09-17 12:15:29.715 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Rebootstrapping with [localhost/127.0.0.1:9092]
+2026-09-17 12:15:29.777 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Rebootstrapping with [localhost/127.0.0.1:9092]
+2026-09-17 12:15:29.957 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Node -1 disconnected.
+2026-09-17 12:15:29.957 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:29.957 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:30.824 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Rebootstrapping with [localhost/127.0.0.1:9092]
+2026-09-17 12:15:31.240 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Node -1 disconnected.
+2026-09-17 12:15:31.240 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:31.240 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:32.255 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Node -1 disconnected.
+2026-09-17 12:15:32.255 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:32.255 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:33.270 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Node -1 disconnected.
+2026-09-17 12:15:33.271 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:33.271 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:34.268 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Rebootstrapping with [localhost/127.0.0.1:9092]
+2026-09-17 12:15:34.269 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Node 1 disconnected.
+2026-09-17 12:15:34.269 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:34.269 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.a.k.clients.FetchSessionHandler - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Error sending fetch request (sessionId=1232240907, epoch=INITIAL) to node 1:
+org.apache.kafka.common.errors.DisconnectException
+2026-09-17 12:15:34.270 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Node -1 disconnected.
+2026-09-17 12:15:34.270 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:34.270 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:35.283 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Node -1 disconnected.
+2026-09-17 12:15:35.284 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:35.284 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:36.154 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Rebootstrapping with [localhost/127.0.0.1:9092]
+2026-09-17 12:15:36.217 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Rebootstrapping with [localhost/127.0.0.1:9092]
+2026-09-17 12:15:36.408 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Node -1 disconnected.
+2026-09-17 12:15:36.409 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:36.409 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:37.412 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Node -1 disconnected.
+2026-09-17 12:15:37.416 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:37.417 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:38.414 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Node -1 disconnected.
+2026-09-17 12:15:38.415 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:38.415 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:39.272 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Node 1 disconnected.
+2026-09-17 12:15:39.272 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:39.272 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.a.k.clients.FetchSessionHandler - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Error sending fetch request (sessionId=1232240907, epoch=INITIAL) to node 1:
+org.apache.kafka.common.errors.DisconnectException
+2026-09-17 12:15:39.427 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Node -1 disconnected.
+2026-09-17 12:15:39.428 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:39.428 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:40.318 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Node -1 disconnected.
+2026-09-17 12:15:40.318 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:40.318 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:40.440 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Rebootstrapping with [localhost/127.0.0.1:9092]
+2026-09-17 12:15:40.501 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Rebootstrapping with [localhost/127.0.0.1:9092]
+2026-09-17 12:15:40.699 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Rebootstrapping with [localhost/127.0.0.1:9092]
+2026-09-17 12:15:40.749 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Rebootstrapping with [localhost/127.0.0.1:9092]
+2026-09-17 12:15:41.205 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Rebootstrapping with [localhost/127.0.0.1:9092]
+2026-09-17 12:15:41.262 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Rebootstrapping with [localhost/127.0.0.1:9092]
+2026-09-17 12:15:42.102 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Node -1 disconnected.
+2026-09-17 12:15:42.102 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:42.102 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:43.042 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Rebootstrapping with [localhost/127.0.0.1:9092]
+2026-09-17 12:15:43.107 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Node -1 disconnected.
+2026-09-17 12:15:43.107 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:43.107 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:44.119 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Node -1 disconnected.
+2026-09-17 12:15:44.119 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:44.119 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:44.275 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Node 1 disconnected.
+2026-09-17 12:15:44.276 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:44.276 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.a.k.clients.FetchSessionHandler - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Error sending fetch request (sessionId=1232240907, epoch=INITIAL) to node 1:
+org.apache.kafka.common.errors.DisconnectException
+2026-09-17 12:15:45.133 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Node -1 disconnected.
+2026-09-17 12:15:45.133 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:45.133 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:46.113 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Rebootstrapping with [localhost/127.0.0.1:9092]
+2026-09-17 12:15:46.175 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Node -1 disconnected.
+2026-09-17 12:15:46.177 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:46.177 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:47.037 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Node -1 disconnected.
+2026-09-17 12:15:47.037 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:47.037 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:47.178 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Rebootstrapping with [localhost/127.0.0.1:9092]
+2026-09-17 12:15:47.241 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Rebootstrapping with [localhost/127.0.0.1:9092]
+2026-09-17 12:15:47.574 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Rebootstrapping with [localhost/127.0.0.1:9092]
+2026-09-17 12:15:47.633 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Rebootstrapping with [localhost/127.0.0.1:9092]
+2026-09-17 12:15:48.495 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Node -1 disconnected.
+2026-09-17 12:15:48.496 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:48.496 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:49.277 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Node 1 disconnected.
+2026-09-17 12:15:49.277 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:49.278 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.a.k.clients.FetchSessionHandler - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Error sending fetch request (sessionId=1232240907, epoch=INITIAL) to node 1:
+org.apache.kafka.common.errors.DisconnectException
+2026-09-17 12:15:49.373 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Rebootstrapping with [localhost/127.0.0.1:9092]
+2026-09-17 12:15:49.435 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Rebootstrapping with [localhost/127.0.0.1:9092]
+2026-09-17 12:15:49.649 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Node -1 disconnected.
+2026-09-17 12:15:49.650 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:49.650 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:50.623 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Rebootstrapping with [localhost/127.0.0.1:9092]
+2026-09-17 12:15:50.686 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Node -1 disconnected.
+2026-09-17 12:15:50.686 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:50.686 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:51.283 INFO  service=reputacao-service correlationId= thread=DiscoveryClient-HeartbeatExecutor-%d logger=c.n.d.s.t.d.RedirectingEurekaHttpClient - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/} exception=I/O error on PUT request for "http://localhost:8761/eureka/apps/REPUTACAO-SERVICE/localhost:reputacao-service:8083": Connect to http://localhost:8761 failed: Connection refused: getsockopt
+org.springframework.web.client.ResourceAccessException: I/O error on PUT request for "http://localhost:8761/eureka/apps/REPUTACAO-SERVICE/localhost:reputacao-service:8083": Connect to http://localhost:8761 failed: Connection refused: getsockopt
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.createResourceAccessException(DefaultRestClient.java:779)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:624)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchange(DefaultRestClient.java:572)
+	at org.springframework.web.client.RestClient$RequestHeadersSpec.exchange(RestClient.java:747)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.executeAndExtract(DefaultRestClient.java:924)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntityInternal(DefaultRestClient.java:870)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntity(DefaultRestClient.java:859)
+	at org.springframework.cloud.netflix.eureka.http.RestClientEurekaHttpClient.sendHeartBeat(RestClientEurekaHttpClient.java:91)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:90)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:860)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1418)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:8761 failed: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:219)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:547)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:138)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:112)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:80)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeWithRequestAndBody(AbstractBufferingClientHttpRequest.java:89)
+	at org.springframework.http.client.InterceptingClientHttpRequest$EndOfChainRequestExecution.execute(InterceptingClientHttpRequest.java:102)
+	at org.springframework.cloud.netflix.eureka.http.RestClientTransportClientFactory.lambda$newClient$2(RestClientTransportClientFactory.java:98)
+	at org.springframework.http.client.ClientHttpRequestInterceptor.lambda$apply$0(ClientHttpRequestInterceptor.java:89)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:73)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:50)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:80)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:614)
+	... 22 common frames omitted
+2026-09-17 12:15:51.285 WARN  service=reputacao-service correlationId= thread=DiscoveryClient-HeartbeatExecutor-%d logger=c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on PUT request for "http://localhost:8761/eureka/apps/REPUTACAO-SERVICE/localhost:reputacao-service:8083": Connect to http://localhost:8761 failed: Connection refused: getsockopt
+2026-09-17 12:15:51.290 INFO  service=reputacao-service correlationId= thread=DiscoveryClient-HeartbeatExecutor-%d logger=c.n.d.s.t.d.RedirectingEurekaHttpClient - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on PUT request for "http://localhost:8761/eureka/apps/REPUTACAO-SERVICE/localhost:reputacao-service:8083": Connect to http://localhost:8761 failed: Connection refused: getsockopt
+org.springframework.web.client.ResourceAccessException: I/O error on PUT request for "http://localhost:8761/eureka/apps/REPUTACAO-SERVICE/localhost:reputacao-service:8083": Connect to http://localhost:8761 failed: Connection refused: getsockopt
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.createResourceAccessException(DefaultRestClient.java:779)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:624)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchange(DefaultRestClient.java:572)
+	at org.springframework.web.client.RestClient$RequestHeadersSpec.exchange(RestClient.java:747)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.executeAndExtract(DefaultRestClient.java:924)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntityInternal(DefaultRestClient.java:870)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntity(DefaultRestClient.java:859)
+	at org.springframework.cloud.netflix.eureka.http.RestClientEurekaHttpClient.sendHeartBeat(RestClientEurekaHttpClient.java:91)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:860)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1418)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:8761 failed: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:219)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:547)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:138)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:112)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:80)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeWithRequestAndBody(AbstractBufferingClientHttpRequest.java:89)
+	at org.springframework.http.client.InterceptingClientHttpRequest$EndOfChainRequestExecution.execute(InterceptingClientHttpRequest.java:102)
+	at org.springframework.cloud.netflix.eureka.http.RestClientTransportClientFactory.lambda$newClient$2(RestClientTransportClientFactory.java:98)
+	at org.springframework.http.client.ClientHttpRequestInterceptor.lambda$apply$0(ClientHttpRequestInterceptor.java:89)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:73)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:50)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:80)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:614)
+	... 23 common frames omitted
+2026-09-17 12:15:51.290 WARN  service=reputacao-service correlationId= thread=DiscoveryClient-HeartbeatExecutor-%d logger=c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on PUT request for "http://localhost:8761/eureka/apps/REPUTACAO-SERVICE/localhost:reputacao-service:8083": Connect to http://localhost:8761 failed: Connection refused: getsockopt
+2026-09-17 12:15:51.291 ERROR service=reputacao-service correlationId= thread=DiscoveryClient-HeartbeatExecutor-%d logger=c.netflix.discovery.DiscoveryClient - DiscoveryClient_REPUTACAO-SERVICE/localhost:reputacao-service:8083 - was unable to send heartbeat!
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:860)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1418)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-09-17 12:15:51.293 INFO  service=reputacao-service correlationId= thread=DiscoveryClient-CacheRefreshExecutor-%d logger=c.n.d.s.t.d.RedirectingEurekaHttpClient - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/} exception=I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connect to http://localhost:8761 failed: Connection refused: getsockopt
+org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connect to http://localhost:8761 failed: Connection refused: getsockopt
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.createResourceAccessException(DefaultRestClient.java:779)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:624)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchange(DefaultRestClient.java:572)
+	at org.springframework.web.client.RestClient$RequestHeadersSpec.exchange(RestClient.java:747)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.executeAndExtract(DefaultRestClient.java:924)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntityInternal(DefaultRestClient.java:870)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntity(DefaultRestClient.java:859)
+	at org.springframework.cloud.netflix.eureka.http.RestClientEurekaHttpClient.getApplicationsInternal(RestClientEurekaHttpClient.java:201)
+	at org.springframework.cloud.netflix.eureka.http.RestClientEurekaHttpClient.getDelta(RestClientEurekaHttpClient.java:142)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:90)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1095)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:978)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1489)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1457)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:8761 failed: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:219)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:547)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:138)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:112)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:80)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeWithRequestAndBody(AbstractBufferingClientHttpRequest.java:89)
+	at org.springframework.http.client.InterceptingClientHttpRequest$EndOfChainRequestExecution.execute(InterceptingClientHttpRequest.java:102)
+	at org.springframework.cloud.netflix.eureka.http.RestClientTransportClientFactory.lambda$newClient$2(RestClientTransportClientFactory.java:98)
+	at org.springframework.http.client.ClientHttpRequestInterceptor.lambda$apply$0(ClientHttpRequestInterceptor.java:89)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:73)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:50)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:80)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:614)
+	... 25 common frames omitted
+2026-09-17 12:15:51.294 WARN  service=reputacao-service correlationId= thread=DiscoveryClient-CacheRefreshExecutor-%d logger=c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connect to http://localhost:8761 failed: Connection refused: getsockopt
+2026-09-17 12:15:51.298 INFO  service=reputacao-service correlationId= thread=DiscoveryClient-CacheRefreshExecutor-%d logger=c.n.d.s.t.d.RedirectingEurekaHttpClient - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connect to http://localhost:8761 failed: Connection refused: getsockopt
+org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connect to http://localhost:8761 failed: Connection refused: getsockopt
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.createResourceAccessException(DefaultRestClient.java:779)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:624)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchange(DefaultRestClient.java:572)
+	at org.springframework.web.client.RestClient$RequestHeadersSpec.exchange(RestClient.java:747)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.executeAndExtract(DefaultRestClient.java:924)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntityInternal(DefaultRestClient.java:870)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntity(DefaultRestClient.java:859)
+	at org.springframework.cloud.netflix.eureka.http.RestClientEurekaHttpClient.getApplicationsInternal(RestClientEurekaHttpClient.java:201)
+	at org.springframework.cloud.netflix.eureka.http.RestClientEurekaHttpClient.getDelta(RestClientEurekaHttpClient.java:142)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1095)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:978)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1489)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1457)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:8761 failed: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:219)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:547)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:138)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:112)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:80)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeWithRequestAndBody(AbstractBufferingClientHttpRequest.java:89)
+	at org.springframework.http.client.InterceptingClientHttpRequest$EndOfChainRequestExecution.execute(InterceptingClientHttpRequest.java:102)
+	at org.springframework.cloud.netflix.eureka.http.RestClientTransportClientFactory.lambda$newClient$2(RestClientTransportClientFactory.java:98)
+	at org.springframework.http.client.ClientHttpRequestInterceptor.lambda$apply$0(ClientHttpRequestInterceptor.java:89)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:73)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:50)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:80)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:614)
+	... 26 common frames omitted
+2026-09-17 12:15:51.298 WARN  service=reputacao-service correlationId= thread=DiscoveryClient-CacheRefreshExecutor-%d logger=c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connect to http://localhost:8761 failed: Connection refused: getsockopt
+2026-09-17 12:15:51.299 INFO  service=reputacao-service correlationId= thread=DiscoveryClient-CacheRefreshExecutor-%d logger=c.netflix.discovery.DiscoveryClient - DiscoveryClient_REPUTACAO-SERVICE/localhost:reputacao-service:8083 - was unable to refresh its cache! This periodic background refresh will be retried in 30 seconds. status = Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1095)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:978)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1489)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1457)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-09-17 12:15:51.687 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Node -1 disconnected.
+2026-09-17 12:15:51.687 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:51.687 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:52.567 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Node -1 disconnected.
+2026-09-17 12:15:52.567 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:52.567 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:52.693 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Rebootstrapping with [localhost/127.0.0.1:9092]
+2026-09-17 12:15:52.756 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Rebootstrapping with [localhost/127.0.0.1:9092]
+2026-09-17 12:15:53.462 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Rebootstrapping with [localhost/127.0.0.1:9092]
+2026-09-17 12:15:53.523 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Rebootstrapping with [localhost/127.0.0.1:9092]
+2026-09-17 12:15:54.281 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Node -1 disconnected.
+2026-09-17 12:15:54.281 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:54.281 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:54.282 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Node 1 disconnected.
+2026-09-17 12:15:54.282 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:54.282 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.a.k.clients.FetchSessionHandler - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Error sending fetch request (sessionId=1232240907, epoch=INITIAL) to node 1:
+org.apache.kafka.common.errors.DisconnectException
+2026-09-17 12:15:55.290 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Node -1 disconnected.
+2026-09-17 12:15:55.290 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:55.290 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:56.276 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Rebootstrapping with [localhost/127.0.0.1:9092]
+2026-09-17 12:15:56.339 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Node -1 disconnected.
+2026-09-17 12:15:56.340 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:56.340 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:57.306 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Rebootstrapping with [localhost/127.0.0.1:9092]
+2026-09-17 12:15:57.369 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Node -1 disconnected.
+2026-09-17 12:15:57.369 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:57.369 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:58.373 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Node -1 disconnected.
+2026-09-17 12:15:58.374 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:58.374 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:59.285 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Node 1 disconnected.
+2026-09-17 12:15:59.285 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:59.285 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Node -1 disconnected.
+2026-09-17 12:15:59.285 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:59.285 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:59.286 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.a.k.clients.FetchSessionHandler - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Error sending fetch request (sessionId=1232240907, epoch=INITIAL) to node 1:
+org.apache.kafka.common.errors.DisconnectException
+2026-09-17 12:15:59.398 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Rebootstrapping with [localhost/127.0.0.1:9092]
+2026-09-17 12:15:59.457 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Rebootstrapping with [localhost/127.0.0.1:9092]
+2026-09-17 12:15:59.629 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Rebootstrapping with [localhost/127.0.0.1:9092]
+2026-09-17 12:15:59.693 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Rebootstrapping with [localhost/127.0.0.1:9092]
+2026-09-17 12:16:00.055 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Rebootstrapping with [localhost/127.0.0.1:9092]
+2026-09-17 12:16:00.119 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Rebootstrapping with [localhost/127.0.0.1:9092]
+2026-09-17 12:16:00.514 WARN  service=reputacao-service correlationId= thread=HikariPool-1:housekeeper logger=com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@358f059b (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2026-09-17 12:16:00.920 WARN  service=reputacao-service correlationId= thread=HikariPool-1:housekeeper logger=com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@5f7e2ffa (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2026-09-17 12:16:01.045 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Node -1 disconnected.
+2026-09-17 12:16:01.046 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:16:01.046 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:16:01.922 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Node -1 disconnected.
+2026-09-17 12:16:01.923 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:16:01.923 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:16:02.031 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Rebootstrapping with [localhost/127.0.0.1:9092]
+2026-09-17 12:16:02.094 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Rebootstrapping with [localhost/127.0.0.1:9092]
+2026-09-17 12:16:03.096 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Node -1 disconnected.
+2026-09-17 12:16:03.096 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:16:03.096 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:16:03.975 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Rebootstrapping with [localhost/127.0.0.1:9092]
+2026-09-17 12:16:04.092 INFO  service=reputacao-service correlationId= thread=SpringApplicationShutdownHook logger=o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application REPUTACAO-SERVICE with eureka with status DOWN
+2026-09-17 12:16:04.093 INFO  service=reputacao-service correlationId= thread=SpringApplicationShutdownHook logger=c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1789658164093, current=DOWN, previous=UP]
+2026-09-17 12:16:04.093 INFO  service=reputacao-service correlationId= thread=DiscoveryClient-InstanceInfoReplicator-%d logger=c.netflix.discovery.DiscoveryClient - DiscoveryClient_REPUTACAO-SERVICE/localhost:reputacao-service:8083: registering service...
+2026-09-17 12:16:04.109 INFO  service=reputacao-service correlationId= thread=DiscoveryClient-InstanceInfoReplicator-%d logger=c.n.d.s.t.d.RedirectingEurekaHttpClient - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on POST request for "http://localhost:8761/eureka/apps/REPUTACAO-SERVICE": Connect to http://localhost:8761 failed: Connection refused: getsockopt
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8761/eureka/apps/REPUTACAO-SERVICE": Connect to http://localhost:8761 failed: Connection refused: getsockopt
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.createResourceAccessException(DefaultRestClient.java:779)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:624)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchange(DefaultRestClient.java:572)
+	at org.springframework.web.client.RestClient$RequestHeadersSpec.exchange(RestClient.java:747)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.executeAndExtract(DefaultRestClient.java:924)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toBodilessEntity(DefaultRestClient.java:888)
+	at org.springframework.cloud.netflix.eureka.http.RestClientEurekaHttpClient.register(RestClientEurekaHttpClient.java:64)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:843)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:8761 failed: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:219)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:547)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:138)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:112)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:80)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeWithRequestAndBody(AbstractBufferingClientHttpRequest.java:89)
+	at org.springframework.http.client.InterceptingClientHttpRequest$EndOfChainRequestExecution.execute(InterceptingClientHttpRequest.java:102)
+	at org.springframework.cloud.netflix.eureka.http.RestClientTransportClientFactory.lambda$newClient$2(RestClientTransportClientFactory.java:98)
+	at org.springframework.http.client.ClientHttpRequestInterceptor.lambda$apply$0(ClientHttpRequestInterceptor.java:89)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:73)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:50)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:80)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:614)
+	... 24 common frames omitted
+2026-09-17 12:16:04.110 WARN  service=reputacao-service correlationId= thread=DiscoveryClient-InstanceInfoReplicator-%d logger=c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/REPUTACAO-SERVICE": Connect to http://localhost:8761 failed: Connection refused: getsockopt
+2026-09-17 12:16:04.110 WARN  service=reputacao-service correlationId= thread=DiscoveryClient-InstanceInfoReplicator-%d logger=c.netflix.discovery.DiscoveryClient - DiscoveryClient_REPUTACAO-SERVICE/localhost:reputacao-service:8083 - registration failed Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:843)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-09-17 12:16:04.110 WARN  service=reputacao-service correlationId= thread=DiscoveryClient-InstanceInfoReplicator-%d logger=c.n.discovery.InstanceInfoReplicator - There was a problem with the instance info replicator
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:843)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-09-17 12:16:04.287 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Node -1 disconnected.
+2026-09-17 12:16:04.288 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:16:04.288 WARN  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:16:04.289 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Revoke previously assigned partitions [contrato-eventos-0]
+2026-09-17 12:16:04.289 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.s.k.l.KafkaMessageListenerContainer - reputacao-service: partitions revoked: [contrato-eventos-0]
+2026-09-17 12:16:04.290 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Resetting generation and member id due to: consumer pro-actively leaving the group
+2026-09-17 12:16:04.290 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Request joining group due to: consumer pro-actively leaving the group
+2026-09-17 12:16:04.290 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.a.k.c.c.i.ClassicKafkaConsumer - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Unsubscribed all topics or patterns and assigned partitions
+2026-09-17 12:16:04.292 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Resetting generation and member id due to: consumer pro-actively leaving the group
+2026-09-17 12:16:04.293 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-reputacao-service-1, groupId=reputacao-service] Request joining group due to: consumer pro-actively leaving the group
+2026-09-17 12:16:04.295 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2026-09-17 12:16:04.295 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2026-09-17 12:16:04.295 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2026-09-17 12:16:04.295 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2026-09-17 12:16:04.300 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-reputacao-service-1 unregistered
+2026-09-17 12:16:04.301 INFO  service=reputacao-service correlationId= thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 logger=o.s.k.l.KafkaMessageListenerContainer - reputacao-service: Consumer stopped
+2026-09-17 12:16:04.303 INFO  service=reputacao-service correlationId= thread=SpringApplicationShutdownHook logger=o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-17 12:16:04.318 INFO  service=reputacao-service correlationId= thread=tomcat-shutdown logger=o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-09-17 12:16:04.331 INFO  service=reputacao-service correlationId= thread=SpringApplicationShutdownHook logger=o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-09-17 12:16:04.334 INFO  service=reputacao-service correlationId= thread=SpringApplicationShutdownHook logger=com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-09-17 12:16:06.245 INFO  service=reputacao-service correlationId= thread=SpringApplicationShutdownHook logger=com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-09-17 12:16:06.671 INFO  service=reputacao-service correlationId= thread=SpringApplicationShutdownHook logger=c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...

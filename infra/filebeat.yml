@@ -1,0 +1,18 @@
+filebeat.inputs:
+  - type: log
+    enabled: true
+    paths:
+      - /logs-source/*/logs/*.log
+    processors:
+      - dissect:
+          tokenizer: "%{date} %{time} %{level} service=%{app_service} correlationId=%{correlationId} thread=%{thread} logger=%{logger} - %{logmsg}"
+          field: "message"
+          target_prefix: ""
+          trim_values: "all"
+          overwrite_keys: true
+
+output.elasticsearch:
+  hosts: ["elasticsearch:9200"]
+
+setup.kibana:
+  host: "kibana:5601"

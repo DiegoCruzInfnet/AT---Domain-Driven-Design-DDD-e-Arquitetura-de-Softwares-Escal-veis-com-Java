@@ -1,0 +1,1089 @@
+2026-09-17T11:08:32.281-03:00  INFO 26644 --- [contrato-service] [main] [                                                 ] b.c.freela.contrato.ContratoApplication  : Starting ContratoApplication using Java 21.0.8 with PID 26644 (D:\Faculdade\TPs e ATs\8 semestre\Domain-Driven Design (DDD) e Arquitetura de Softwares Escaláveis com Java\AT\freela-marketplace-assessment\contrato-service\target\classes started by diego in D:\Faculdade\TPs e ATs\8 semestre\Domain-Driven Design (DDD) e Arquitetura de Softwares Escaláveis com Java\AT\freela-marketplace-assessment\contrato-service)
+2026-09-17T11:08:32.290-03:00  INFO 26644 --- [contrato-service] [main] [                                                 ] b.c.freela.contrato.ContratoApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-09-17T11:08:33.424-03:00  INFO 26644 --- [contrato-service] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-17T11:08:33.606-03:00  INFO 26644 --- [contrato-service] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 166 ms. Found 2 JPA repository interfaces.
+2026-09-17T11:08:34.081-03:00  INFO 26644 --- [contrato-service] [main] [                                                 ] o.s.cloud.context.scope.GenericScope     : BeanFactory id=80ed4e86-3485-32fe-88da-cdfc15a3f8c7
+2026-09-17T11:08:34.755-03:00  INFO 26644 --- [contrato-service] [main] [                                                 ] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8081 (http)
+2026-09-17T11:08:34.779-03:00  INFO 26644 --- [contrato-service] [main] [                                                 ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-17T11:08:34.780-03:00  INFO 26644 --- [contrato-service] [main] [                                                 ] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-09-17T11:08:34.890-03:00  INFO 26644 --- [contrato-service] [main] [                                                 ] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2555 ms
+2026-09-17T11:08:35.587-03:00  INFO 26644 --- [contrato-service] [main] [                                                 ] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-09-17T11:08:35.662-03:00  INFO 26644 --- [contrato-service] [main] [                                                 ] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-09-17T11:08:36.261-03:00  INFO 26644 --- [contrato-service] [main] [                                                 ] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-17T11:08:36.312-03:00  INFO 26644 --- [contrato-service] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-17T11:08:36.502-03:00  INFO 26644 --- [contrato-service] [main] [                                                 ] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@380e3122
+2026-09-17T11:08:36.504-03:00  INFO 26644 --- [contrato-service] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-17T11:08:36.636-03:00  INFO 26644 --- [contrato-service] [main] [                                                 ] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/contrato_db]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 16.13
+	Default catalog/schema: contrato_db/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-17T11:08:37.774-03:00  INFO 26644 --- [contrato-service] [main] [                                                 ] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-17T11:08:37.840-03:00  INFO 26644 --- [contrato-service] [main] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-17T11:08:37.924-03:00  INFO 26644 --- [contrato-service] [main] [                                                 ] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-09-17T11:08:39.620-03:00  INFO 26644 --- [contrato-service] [main] [                                                 ] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2026-09-17T11:08:41.105-03:00  INFO 26644 --- [contrato-service] [main] [                                                 ] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2026-09-17T11:08:41.132-03:00  INFO 26644 --- [contrato-service] [main] [                                                 ] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestClient.
+2026-09-17T11:08:41.185-03:00  WARN 26644 --- [contrato-service] [main] [                                                 ] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-09-17T11:08:41.194-03:00  INFO 26644 --- [contrato-service] [main] [                                                 ] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2026-09-17T11:08:41.298-03:00  INFO 26644 --- [contrato-service] [main] [                                                 ] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-09-17T11:08:41.327-03:00  INFO 26644 --- [contrato-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-09-17T11:08:41.333-03:00  INFO 26644 --- [contrato-service] [main] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-17T11:08:41.345-03:00  INFO 26644 --- [contrato-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-09-17T11:08:41.345-03:00  INFO 26644 --- [contrato-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-09-17T11:08:41.346-03:00  INFO 26644 --- [contrato-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-09-17T11:08:41.346-03:00  INFO 26644 --- [contrato-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-09-17T11:08:41.346-03:00  INFO 26644 --- [contrato-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-09-17T11:08:41.346-03:00  INFO 26644 --- [contrato-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-09-17T11:08:41.346-03:00  INFO 26644 --- [contrato-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-09-17T11:08:41.793-03:00  INFO 26644 --- [contrato-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-09-17T11:08:41.796-03:00  INFO 26644 --- [contrato-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-09-17T11:08:41.798-03:00  INFO 26644 --- [contrato-service] [main] [                                                 ] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-09-17T11:08:41.801-03:00  INFO 26644 --- [contrato-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1789654121800 with initial instances count: 3
+2026-09-17T11:08:41.805-03:00  INFO 26644 --- [contrato-service] [main] [                                                 ] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CONTRATO-SERVICE with eureka with status UP
+2026-09-17T11:08:41.806-03:00  INFO 26644 --- [contrato-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1789654121806, current=UP, previous=STARTING]
+2026-09-17T11:08:41.809-03:00  INFO 26644 --- [contrato-service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CONTRATO-SERVICE/localhost:contrato-service:8081: registering service...
+2026-09-17T11:08:41.821-03:00  INFO 26644 --- [contrato-service] [main] [                                                 ] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8081 (http) with context path '/'
+2026-09-17T11:08:41.822-03:00  INFO 26644 --- [contrato-service] [main] [                                                 ] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2026-09-17T11:08:41.852-03:00  INFO 26644 --- [contrato-service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CONTRATO-SERVICE/localhost:contrato-service:8081 - registration status: 204
+2026-09-17T11:08:42.837-03:00  INFO 26644 --- [contrato-service] [main] [                                                 ] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2026-09-17T11:08:42.856-03:00  INFO 26644 --- [contrato-service] [main] [                                                 ] b.c.freela.contrato.ContratoApplication  : Started ContratoApplication in 12.213 seconds (process running for 12.97)
+2026-09-17T11:13:41.357-03:00  INFO 26644 --- [contrato-service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-17T11:18:41.369-03:00  INFO 26644 --- [contrato-service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-17T11:23:41.382-03:00  INFO 26644 --- [contrato-service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-17T11:28:41.391-03:00  INFO 26644 --- [contrato-service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-17T11:30:03.010-03:00  INFO 26644 --- [contrato-service] [SpringApplicationShutdownHook] [                                                 ] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application CONTRATO-SERVICE with eureka with status DOWN
+2026-09-17T11:30:03.011-03:00  INFO 26644 --- [contrato-service] [SpringApplicationShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1789655403011, current=DOWN, previous=UP]
+2026-09-17T11:30:03.011-03:00  INFO 26644 --- [contrato-service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CONTRATO-SERVICE/localhost:contrato-service:8081: registering service...
+2026-09-17T11:30:03.017-03:00  INFO 26644 --- [contrato-service] [SpringApplicationShutdownHook] [                                                 ] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-17T11:30:03.028-03:00  INFO 26644 --- [contrato-service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CONTRATO-SERVICE/localhost:contrato-service:8081 - registration status: 204
+2026-09-17T11:30:03.048-03:00  INFO 26644 --- [contrato-service] [tomcat-shutdown] [                                                 ] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-09-17T11:30:03.059-03:00  INFO 26644 --- [contrato-service] [SpringApplicationShutdownHook] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-09-17T11:30:03.063-03:00  INFO 26644 --- [contrato-service] [SpringApplicationShutdownHook] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-09-17T11:30:03.071-03:00  INFO 26644 --- [contrato-service] [SpringApplicationShutdownHook] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-09-17T11:30:03.980-03:00  INFO 26644 --- [contrato-service] [SpringApplicationShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2026-09-17T11:30:06.989-03:00  INFO 26644 --- [contrato-service] [SpringApplicationShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2026-09-17T11:30:07.005-03:00  INFO 26644 --- [contrato-service] [SpringApplicationShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CONTRATO-SERVICE/localhost:contrato-service:8081 - deregister  status: 200
+2026-09-17T11:30:07.007-03:00  INFO 26644 --- [contrato-service] [SpringApplicationShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2026-09-17 11:36:01.264 INFO  service=contrato-service correlationId= thread=main logger=b.c.f.contrato.ContratoApplication - Starting ContratoApplication using Java 21.0.8 with PID 2812 (D:\Faculdade\TPs e ATs\8 semestre\Domain-Driven Design (DDD) e Arquitetura de Softwares Escaláveis com Java\AT\freela-marketplace-assessment\contrato-service\target\classes started by diego in D:\Faculdade\TPs e ATs\8 semestre\Domain-Driven Design (DDD) e Arquitetura de Softwares Escaláveis com Java\AT\freela-marketplace-assessment\contrato-service)
+2026-09-17 11:36:01.268 INFO  service=contrato-service correlationId= thread=main logger=b.c.f.contrato.ContratoApplication - No active profile set, falling back to 1 default profile: "default"
+2026-09-17 11:36:02.099 INFO  service=contrato-service correlationId= thread=main logger=o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-17 11:36:02.238 INFO  service=contrato-service correlationId= thread=main logger=o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 129 ms. Found 2 JPA repository interfaces.
+2026-09-17 11:36:02.583 INFO  service=contrato-service correlationId= thread=main logger=o.s.cloud.context.scope.GenericScope - BeanFactory id=80ed4e86-3485-32fe-88da-cdfc15a3f8c7
+2026-09-17 11:36:02.986 INFO  service=contrato-service correlationId= thread=main logger=o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-09-17 11:36:03.004 INFO  service=contrato-service correlationId= thread=main logger=o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-09-17 11:36:03.004 INFO  service=contrato-service correlationId= thread=main logger=o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-09-17 11:36:03.089 INFO  service=contrato-service correlationId= thread=main logger=o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1776 ms
+2026-09-17 11:36:03.594 INFO  service=contrato-service correlationId= thread=main logger=org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-09-17 11:36:03.657 INFO  service=contrato-service correlationId= thread=main logger=org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-09-17 11:36:04.058 INFO  service=contrato-service correlationId= thread=main logger=o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-17 11:36:04.092 INFO  service=contrato-service correlationId= thread=main logger=com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-09-17 11:36:04.226 INFO  service=contrato-service correlationId= thread=main logger=com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6b6939e1
+2026-09-17 11:36:04.227 INFO  service=contrato-service correlationId= thread=main logger=com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-09-17 11:36:04.302 INFO  service=contrato-service correlationId= thread=main logger=o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/contrato_db]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 16.13
+	Default catalog/schema: contrato_db/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-17 11:36:05.304 INFO  service=contrato-service correlationId= thread=main logger=org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-17 11:36:05.374 INFO  service=contrato-service correlationId= thread=main logger=o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-17 11:36:05.454 INFO  service=contrato-service correlationId= thread=main logger=o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-09-17 11:36:07.163 INFO  service=contrato-service correlationId= thread=main logger=o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2026-09-17 11:36:08.447 INFO  service=contrato-service correlationId= thread=main logger=o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2026-09-17 11:36:08.472 INFO  service=contrato-service correlationId= thread=main logger=o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestClient.
+2026-09-17 11:36:08.529 WARN  service=contrato-service correlationId= thread=main logger=o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-09-17 11:36:08.539 INFO  service=contrato-service correlationId= thread=main logger=o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoints beneath base path '/actuator'
+2026-09-17 11:36:08.629 INFO  service=contrato-service correlationId= thread=main logger=o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-09-17 11:36:08.661 INFO  service=contrato-service correlationId= thread=main logger=c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2026-09-17 11:36:08.666 INFO  service=contrato-service correlationId= thread=main logger=c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-09-17 11:36:08.676 INFO  service=contrato-service correlationId= thread=main logger=c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2026-09-17 11:36:08.676 INFO  service=contrato-service correlationId= thread=main logger=c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2026-09-17 11:36:08.677 INFO  service=contrato-service correlationId= thread=main logger=c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2026-09-17 11:36:08.677 INFO  service=contrato-service correlationId= thread=main logger=c.netflix.discovery.DiscoveryClient - Application is null : false
+2026-09-17 11:36:08.677 INFO  service=contrato-service correlationId= thread=main logger=c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2026-09-17 11:36:08.677 INFO  service=contrato-service correlationId= thread=main logger=c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2026-09-17 11:36:08.678 INFO  service=contrato-service correlationId= thread=main logger=c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2026-09-17 11:36:09.009 INFO  service=contrato-service correlationId= thread=main logger=c.netflix.discovery.DiscoveryClient - The response status is 200
+2026-09-17 11:36:09.011 INFO  service=contrato-service correlationId= thread=main logger=c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2026-09-17 11:36:09.014 INFO  service=contrato-service correlationId= thread=main logger=c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-09-17 11:36:09.016 INFO  service=contrato-service correlationId= thread=main logger=c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1789655769015 with initial instances count: 2
+2026-09-17 11:36:09.020 INFO  service=contrato-service correlationId= thread=main logger=o.s.c.n.e.s.EurekaServiceRegistry - Registering application CONTRATO-SERVICE with eureka with status UP
+2026-09-17 11:36:09.021 INFO  service=contrato-service correlationId= thread=main logger=c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1789655769021, current=UP, previous=STARTING]
+2026-09-17 11:36:09.023 INFO  service=contrato-service correlationId= thread=DiscoveryClient-InstanceInfoReplicator-%d logger=c.netflix.discovery.DiscoveryClient - DiscoveryClient_CONTRATO-SERVICE/localhost:contrato-service:8081: registering service...
+2026-09-17 11:36:09.039 INFO  service=contrato-service correlationId= thread=main logger=o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2026-09-17 11:36:09.040 INFO  service=contrato-service correlationId= thread=main logger=o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8081
+2026-09-17 11:36:09.077 INFO  service=contrato-service correlationId= thread=DiscoveryClient-InstanceInfoReplicator-%d logger=c.netflix.discovery.DiscoveryClient - DiscoveryClient_CONTRATO-SERVICE/localhost:contrato-service:8081 - registration status: 204
+2026-09-17 11:36:10.056 INFO  service=contrato-service correlationId= thread=main logger=o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2026-09-17 11:36:10.069 INFO  service=contrato-service correlationId= thread=main logger=b.c.f.contrato.ContratoApplication - Started ContratoApplication in 10.396 seconds (process running for 11.056)
+2026-09-17 11:38:16.774 INFO  service=contrato-service correlationId= thread=http-nio-8081-exec-1 logger=o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-17 11:38:16.774 INFO  service=contrato-service correlationId= thread=http-nio-8081-exec-1 logger=o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-09-17 11:38:16.777 INFO  service=contrato-service correlationId= thread=http-nio-8081-exec-1 logger=o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2026-09-17 11:38:16.919 INFO  service=contrato-service correlationId=a121bb6c-a8ec-40c1-8ad2-4ba6c4a70d7d thread=http-nio-8081-exec-1 logger=b.c.f.c.i.web.ContratoController - http.contrato.criar correlationId=a121bb6c-a8ec-40c1-8ad2-4ba6c4a70d7d clienteId=99990000-9999-0000-9999-000099990000 freelancerId=11112222-1111-2222-1111-222211112222 titulo=Teste ELK final
+2026-09-17 11:38:16.921 INFO  service=contrato-service correlationId=a121bb6c-a8ec-40c1-8ad2-4ba6c4a70d7d thread=http-nio-8081-exec-1 logger=b.c.f.c.a.ContratoApplicationService - contrato.criacao.inicio clienteId=99990000-9999-0000-9999-000099990000 freelancerId=11112222-1111-2222-1111-222211112222 titulo=Teste ELK final valor=444.00
+2026-09-17 11:38:16.923 INFO  service=contrato-service correlationId=a121bb6c-a8ec-40c1-8ad2-4ba6c4a70d7d thread=http-nio-8081-exec-1 logger=b.c.f.c.i.p.ContratoRepositoryJpaAdapter - contrato.persistence.save.inicio contratoId=b4f03a59-b023-46df-9e6a-92e4460dc040 status=ATIVO
+2026-09-17 11:38:16.951 INFO  service=contrato-service correlationId=a121bb6c-a8ec-40c1-8ad2-4ba6c4a70d7d thread=http-nio-8081-exec-1 logger=b.c.f.c.i.p.ContratoRepositoryJpaAdapter - contrato.persistence.save.sucesso contratoId=b4f03a59-b023-46df-9e6a-92e4460dc040 status=ATIVO
+2026-09-17 11:38:16.972 INFO  service=contrato-service correlationId=a121bb6c-a8ec-40c1-8ad2-4ba6c4a70d7d thread=http-nio-8081-exec-1 logger=b.c.f.c.i.p.OutboxRepositoryJpaAdapter - contrato.outbox.registrado contratoId=b4f03a59-b023-46df-9e6a-92e4460dc040 eventId=d4aaaa78-47e8-44aa-9aa6-64e44339555d eventType=ContratoCriado
+2026-09-17 11:38:16.972 INFO  service=contrato-service correlationId=a121bb6c-a8ec-40c1-8ad2-4ba6c4a70d7d thread=http-nio-8081-exec-1 logger=b.c.f.c.a.ContratoApplicationService - contrato.evento.pendente contratoId=b4f03a59-b023-46df-9e6a-92e4460dc040 eventId=d4aaaa78-47e8-44aa-9aa6-64e44339555d eventType=ContratoCriado
+2026-09-17 11:38:16.972 INFO  service=contrato-service correlationId=a121bb6c-a8ec-40c1-8ad2-4ba6c4a70d7d thread=http-nio-8081-exec-1 logger=b.c.f.c.a.ContratoApplicationService - contrato.criacao.sucesso contratoId=b4f03a59-b023-46df-9e6a-92e4460dc040 status=ATIVO
+2026-09-17 11:38:16.998 INFO  service=contrato-service correlationId=a121bb6c-a8ec-40c1-8ad2-4ba6c4a70d7d thread=http-nio-8081-exec-1 logger=b.c.f.c.i.web.ContratoController - http.contrato.criar.response correlationId=a121bb6c-a8ec-40c1-8ad2-4ba6c4a70d7d contratoId=b4f03a59-b023-46df-9e6a-92e4460dc040 status=ATIVO
+2026-09-17 11:38:17.397 INFO  service=contrato-service correlationId= thread=scheduling-1 logger=b.c.f.c.i.m.OutboxPublisherScheduler - outbox.publisher.ciclo.inicio quantidade=1
+2026-09-17 11:38:17.423 INFO  service=contrato-service correlationId= thread=scheduling-1 logger=o.a.k.common.config.AbstractConfig - AdminClientConfig values: 
+	bootstrap.controllers = []
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = contrato-service-admin-0
+	config.providers = []
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	enable.metrics.push = false
+	metadata.max.age.ms = 300000
+	metadata.recovery.rebootstrap.trigger.ms = 300000
+	metadata.recovery.strategy = rebootstrap
+	metric.reporters = [org.apache.kafka.common.metrics.JmxReporter]
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.assertion.algorithm = RS256
+	sasl.oauthbearer.assertion.claim.aud = null
+	sasl.oauthbearer.assertion.claim.exp.seconds = 300
+	sasl.oauthbearer.assertion.claim.iss = null
+	sasl.oauthbearer.assertion.claim.jti.include = false
+	sasl.oauthbearer.assertion.claim.nbf.seconds = 60
+	sasl.oauthbearer.assertion.claim.sub = null
+	sasl.oauthbearer.assertion.file = null
+	sasl.oauthbearer.assertion.private.key.file = null
+	sasl.oauthbearer.assertion.private.key.passphrase = null
+	sasl.oauthbearer.assertion.template.file = null
+	sasl.oauthbearer.client.credentials.client.id = null
+	sasl.oauthbearer.client.credentials.client.secret = null
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = []
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.jwt.retriever.class = class org.apache.kafka.common.security.oauthbearer.DefaultJwtRetriever
+	sasl.oauthbearer.jwt.validator.class = class org.apache.kafka.common.security.oauthbearer.DefaultJwtValidator
+	sasl.oauthbearer.scope = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = []
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2026-09-17 11:38:17.484 INFO  service=contrato-service correlationId= thread=scheduling-1 logger=o.a.kafka.common.utils.AppInfoParser - Kafka version: 4.2.1
+2026-09-17 11:38:17.485 INFO  service=contrato-service correlationId= thread=scheduling-1 logger=o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 92f61c44867f39dc
+2026-09-17 11:38:17.486 INFO  service=contrato-service correlationId= thread=scheduling-1 logger=o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1789655897483
+2026-09-17 11:38:17.876 INFO  service=contrato-service correlationId= thread=scheduling-1 logger=o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2026-09-17 11:38:17.877 INFO  service=contrato-service correlationId= thread=scheduling-1 logger=o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2026-09-17 11:38:17.877 INFO  service=contrato-service correlationId= thread=scheduling-1 logger=o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2026-09-17 11:38:17.878 INFO  service=contrato-service correlationId= thread=kafka-admin-client-thread | contrato-service-admin-0 logger=o.a.kafka.common.utils.AppInfoParser - App info kafka.admin.client for contrato-service-admin-0 unregistered
+2026-09-17 11:38:17.882 INFO  service=contrato-service correlationId= thread=kafka-admin-client-thread | contrato-service-admin-0 logger=o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2026-09-17 11:38:17.882 INFO  service=contrato-service correlationId= thread=kafka-admin-client-thread | contrato-service-admin-0 logger=o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2026-09-17 11:38:17.883 INFO  service=contrato-service correlationId= thread=kafka-admin-client-thread | contrato-service-admin-0 logger=o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2026-09-17 11:38:17.899 INFO  service=contrato-service correlationId= thread=scheduling-1 logger=o.a.k.common.config.AbstractConfig - ProducerConfig values: 
+	acks = -1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = contrato-service-producer-1
+	compression.gzip.level = -1
+	compression.lz4.level = 9
+	compression.type = none
+	compression.zstd.level = 3
+	config.providers = []
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	enable.metrics.push = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 5
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metadata.recovery.rebootstrap.trigger.ms = 300000
+	metadata.recovery.strategy = rebootstrap
+	metric.reporters = [org.apache.kafka.common.metrics.JmxReporter]
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.assertion.algorithm = RS256
+	sasl.oauthbearer.assertion.claim.aud = null
+	sasl.oauthbearer.assertion.claim.exp.seconds = 300
+	sasl.oauthbearer.assertion.claim.iss = null
+	sasl.oauthbearer.assertion.claim.jti.include = false
+	sasl.oauthbearer.assertion.claim.nbf.seconds = 60
+	sasl.oauthbearer.assertion.claim.sub = null
+	sasl.oauthbearer.assertion.file = null
+	sasl.oauthbearer.assertion.private.key.file = null
+	sasl.oauthbearer.assertion.private.key.passphrase = null
+	sasl.oauthbearer.assertion.template.file = null
+	sasl.oauthbearer.client.credentials.client.id = null
+	sasl.oauthbearer.client.credentials.client.secret = null
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = []
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.jwt.retriever.class = class org.apache.kafka.common.security.oauthbearer.DefaultJwtRetriever
+	sasl.oauthbearer.jwt.validator.class = class org.apache.kafka.common.security.oauthbearer.DefaultJwtValidator
+	sasl.oauthbearer.scope = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = []
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transaction.two.phase.commit.enable = false
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2026-09-17 11:38:17.926 INFO  service=contrato-service correlationId= thread=scheduling-1 logger=o.a.k.c.t.i.KafkaMetricsCollector - initializing Kafka metrics collector
+2026-09-17 11:38:17.938 INFO  service=contrato-service correlationId= thread=scheduling-1 logger=o.a.k.clients.producer.KafkaProducer - [Producer clientId=contrato-service-producer-1] Instantiated an idempotent producer.
+2026-09-17 11:38:17.962 INFO  service=contrato-service correlationId= thread=scheduling-1 logger=o.a.kafka.common.utils.AppInfoParser - Kafka version: 4.2.1
+2026-09-17 11:38:17.962 INFO  service=contrato-service correlationId= thread=scheduling-1 logger=o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 92f61c44867f39dc
+2026-09-17 11:38:17.962 INFO  service=contrato-service correlationId= thread=scheduling-1 logger=o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1789655897962
+2026-09-17 11:38:17.980 INFO  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=org.apache.kafka.clients.Metadata - [Producer clientId=contrato-service-producer-1] Cluster ID: 5L6g3nShT-eMCtK--X86sw
+2026-09-17 11:38:17.983 INFO  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.a.k.c.p.i.TransactionManager - [Producer clientId=contrato-service-producer-1] ProducerId set to 1 with epoch 0
+2026-09-17 11:38:18.038 INFO  service=contrato-service correlationId= thread=scheduling-1 logger=b.c.f.c.i.m.OutboxPublisherScheduler - outbox.publisher.sucesso eventId=d4aaaa78-47e8-44aa-9aa6-64e44339555d contratoId=b4f03a59-b023-46df-9e6a-92e4460dc040 eventType=ContratoCriado topico=contrato-eventos
+2026-09-17 11:38:45.151 INFO  service=contrato-service correlationId=d112bb8b-4974-4b67-a7b6-a853d576c6f4 thread=http-nio-8081-exec-2 logger=b.c.f.c.i.web.ContratoController - http.contrato.entrega correlationId=d112bb8b-4974-4b67-a7b6-a853d576c6f4 contratoId=b4f03a59-b023-46df-9e6a-92e4460dc040
+2026-09-17 11:38:45.154 INFO  service=contrato-service correlationId=d112bb8b-4974-4b67-a7b6-a853d576c6f4 thread=http-nio-8081-exec-2 logger=b.c.f.c.a.ContratoApplicationService - contrato.entrega.inicio contratoId=b4f03a59-b023-46df-9e6a-92e4460dc040
+2026-09-17 11:38:45.155 INFO  service=contrato-service correlationId=d112bb8b-4974-4b67-a7b6-a853d576c6f4 thread=http-nio-8081-exec-2 logger=b.c.f.c.i.p.ContratoRepositoryJpaAdapter - contrato.persistence.findById contratoId=b4f03a59-b023-46df-9e6a-92e4460dc040
+2026-09-17 11:38:45.163 INFO  service=contrato-service correlationId=d112bb8b-4974-4b67-a7b6-a853d576c6f4 thread=http-nio-8081-exec-2 logger=b.c.f.c.i.p.ContratoRepositoryJpaAdapter - contrato.persistence.save.inicio contratoId=b4f03a59-b023-46df-9e6a-92e4460dc040 status=ENTREGA_REGISTRADA
+2026-09-17 11:38:45.165 INFO  service=contrato-service correlationId=d112bb8b-4974-4b67-a7b6-a853d576c6f4 thread=http-nio-8081-exec-2 logger=b.c.f.c.i.p.ContratoRepositoryJpaAdapter - contrato.persistence.save.sucesso contratoId=b4f03a59-b023-46df-9e6a-92e4460dc040 status=ENTREGA_REGISTRADA
+2026-09-17 11:38:45.170 INFO  service=contrato-service correlationId=d112bb8b-4974-4b67-a7b6-a853d576c6f4 thread=http-nio-8081-exec-2 logger=b.c.f.c.i.p.OutboxRepositoryJpaAdapter - contrato.outbox.registrado contratoId=b4f03a59-b023-46df-9e6a-92e4460dc040 eventId=f64fa30d-eabe-4abb-9a00-2db668b94711 eventType=EntregaRegistrada
+2026-09-17 11:38:45.170 INFO  service=contrato-service correlationId=d112bb8b-4974-4b67-a7b6-a853d576c6f4 thread=http-nio-8081-exec-2 logger=b.c.f.c.a.ContratoApplicationService - contrato.evento.pendente contratoId=b4f03a59-b023-46df-9e6a-92e4460dc040 eventId=f64fa30d-eabe-4abb-9a00-2db668b94711 eventType=EntregaRegistrada
+2026-09-17 11:38:45.170 INFO  service=contrato-service correlationId=d112bb8b-4974-4b67-a7b6-a853d576c6f4 thread=http-nio-8081-exec-2 logger=b.c.f.c.a.ContratoApplicationService - contrato.entrega.sucesso contratoId=b4f03a59-b023-46df-9e6a-92e4460dc040 status=ENTREGA_REGISTRADA
+2026-09-17 11:38:45.177 INFO  service=contrato-service correlationId=d112bb8b-4974-4b67-a7b6-a853d576c6f4 thread=http-nio-8081-exec-2 logger=b.c.f.c.i.web.ContratoController - http.contrato.entrega.response correlationId=d112bb8b-4974-4b67-a7b6-a853d576c6f4 contratoId=b4f03a59-b023-46df-9e6a-92e4460dc040 status=ENTREGA_REGISTRADA
+2026-09-17 11:38:46.263 INFO  service=contrato-service correlationId= thread=scheduling-1 logger=b.c.f.c.i.m.OutboxPublisherScheduler - outbox.publisher.ciclo.inicio quantidade=1
+2026-09-17 11:38:46.279 INFO  service=contrato-service correlationId= thread=scheduling-1 logger=b.c.f.c.i.m.OutboxPublisherScheduler - outbox.publisher.sucesso eventId=f64fa30d-eabe-4abb-9a00-2db668b94711 contratoId=b4f03a59-b023-46df-9e6a-92e4460dc040 eventType=EntregaRegistrada topico=contrato-eventos
+2026-09-17 11:39:01.474 INFO  service=contrato-service correlationId=sem-correlation-id thread=http-nio-8081-exec-4 logger=b.c.f.c.i.web.ContratoController - http.contrato.conclusao correlationId=null contratoId=b4f03a59-b023-46df-9e6a-92e4460dc040
+2026-09-17 11:39:01.477 INFO  service=contrato-service correlationId=sem-correlation-id thread=http-nio-8081-exec-4 logger=b.c.f.c.a.ContratoApplicationService - contrato.conclusao.inicio contratoId=b4f03a59-b023-46df-9e6a-92e4460dc040
+2026-09-17 11:39:01.477 INFO  service=contrato-service correlationId=sem-correlation-id thread=http-nio-8081-exec-4 logger=b.c.f.c.i.p.ContratoRepositoryJpaAdapter - contrato.persistence.findById contratoId=b4f03a59-b023-46df-9e6a-92e4460dc040
+2026-09-17 11:39:01.480 INFO  service=contrato-service correlationId=sem-correlation-id thread=http-nio-8081-exec-4 logger=b.c.f.c.i.p.ContratoRepositoryJpaAdapter - contrato.persistence.save.inicio contratoId=b4f03a59-b023-46df-9e6a-92e4460dc040 status=CONCLUIDO
+2026-09-17 11:39:01.481 INFO  service=contrato-service correlationId=sem-correlation-id thread=http-nio-8081-exec-4 logger=b.c.f.c.i.p.ContratoRepositoryJpaAdapter - contrato.persistence.save.sucesso contratoId=b4f03a59-b023-46df-9e6a-92e4460dc040 status=CONCLUIDO
+2026-09-17 11:39:01.486 INFO  service=contrato-service correlationId=sem-correlation-id thread=http-nio-8081-exec-4 logger=b.c.f.c.i.p.OutboxRepositoryJpaAdapter - contrato.outbox.registrado contratoId=b4f03a59-b023-46df-9e6a-92e4460dc040 eventId=7517d56d-7509-4591-8b9d-da882cf7fce4 eventType=ContratoConcluido
+2026-09-17 11:39:01.486 INFO  service=contrato-service correlationId=sem-correlation-id thread=http-nio-8081-exec-4 logger=b.c.f.c.a.ContratoApplicationService - contrato.evento.pendente contratoId=b4f03a59-b023-46df-9e6a-92e4460dc040 eventId=7517d56d-7509-4591-8b9d-da882cf7fce4 eventType=ContratoConcluido
+2026-09-17 11:39:01.486 INFO  service=contrato-service correlationId=sem-correlation-id thread=http-nio-8081-exec-4 logger=b.c.f.c.a.ContratoApplicationService - contrato.conclusao.sucesso contratoId=b4f03a59-b023-46df-9e6a-92e4460dc040 status=CONCLUIDO
+2026-09-17 11:39:01.493 INFO  service=contrato-service correlationId=sem-correlation-id thread=http-nio-8081-exec-4 logger=b.c.f.c.i.web.ContratoController - http.contrato.conclusao.response correlationId=null contratoId=b4f03a59-b023-46df-9e6a-92e4460dc040 status=CONCLUIDO
+2026-09-17 11:39:02.395 INFO  service=contrato-service correlationId= thread=scheduling-1 logger=b.c.f.c.i.m.OutboxPublisherScheduler - outbox.publisher.ciclo.inicio quantidade=1
+2026-09-17 11:39:02.409 INFO  service=contrato-service correlationId= thread=scheduling-1 logger=b.c.f.c.i.m.OutboxPublisherScheduler - outbox.publisher.sucesso eventId=7517d56d-7509-4591-8b9d-da882cf7fce4 contratoId=b4f03a59-b023-46df-9e6a-92e4460dc040 eventType=ContratoConcluido topico=contrato-eventos
+2026-09-17 11:41:08.694 INFO  service=contrato-service correlationId= thread=AsyncResolver-bootstrap-executor-%d logger=c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-09-17 11:46:08.710 INFO  service=contrato-service correlationId= thread=AsyncResolver-bootstrap-executor-%d logger=c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-09-17 11:46:44.586 INFO  service=contrato-service correlationId=sem-correlation-id thread=http-nio-8081-exec-7 logger=b.c.f.c.i.web.ContratoController - http.contrato.criar correlationId=null clienteId=55556666-5555-6666-5555-666655556666 freelancerId=77778888-7777-8888-7777-888877778888 titulo=MARCADOR UNICO TESTE FINAL
+2026-09-17 11:46:44.588 INFO  service=contrato-service correlationId=sem-correlation-id thread=http-nio-8081-exec-7 logger=b.c.f.c.a.ContratoApplicationService - contrato.criacao.inicio clienteId=55556666-5555-6666-5555-666655556666 freelancerId=77778888-7777-8888-7777-888877778888 titulo=MARCADOR UNICO TESTE FINAL valor=123.45
+2026-09-17 11:46:44.589 INFO  service=contrato-service correlationId=sem-correlation-id thread=http-nio-8081-exec-7 logger=b.c.f.c.i.p.ContratoRepositoryJpaAdapter - contrato.persistence.save.inicio contratoId=eb7e7dae-fb74-4c77-8921-d6395b467b60 status=ATIVO
+2026-09-17 11:46:44.594 INFO  service=contrato-service correlationId=sem-correlation-id thread=http-nio-8081-exec-7 logger=b.c.f.c.i.p.ContratoRepositoryJpaAdapter - contrato.persistence.save.sucesso contratoId=eb7e7dae-fb74-4c77-8921-d6395b467b60 status=ATIVO
+2026-09-17 11:46:44.598 INFO  service=contrato-service correlationId=sem-correlation-id thread=http-nio-8081-exec-7 logger=b.c.f.c.i.p.OutboxRepositoryJpaAdapter - contrato.outbox.registrado contratoId=eb7e7dae-fb74-4c77-8921-d6395b467b60 eventId=4591f927-0cee-465c-8214-e20415c3c07a eventType=ContratoCriado
+2026-09-17 11:46:44.599 INFO  service=contrato-service correlationId=sem-correlation-id thread=http-nio-8081-exec-7 logger=b.c.f.c.a.ContratoApplicationService - contrato.evento.pendente contratoId=eb7e7dae-fb74-4c77-8921-d6395b467b60 eventId=4591f927-0cee-465c-8214-e20415c3c07a eventType=ContratoCriado
+2026-09-17 11:46:44.599 INFO  service=contrato-service correlationId=sem-correlation-id thread=http-nio-8081-exec-7 logger=b.c.f.c.a.ContratoApplicationService - contrato.criacao.sucesso contratoId=eb7e7dae-fb74-4c77-8921-d6395b467b60 status=ATIVO
+2026-09-17 11:46:44.609 INFO  service=contrato-service correlationId=sem-correlation-id thread=http-nio-8081-exec-7 logger=b.c.f.c.i.web.ContratoController - http.contrato.criar.response correlationId=null contratoId=eb7e7dae-fb74-4c77-8921-d6395b467b60 status=ATIVO
+2026-09-17 11:46:45.517 INFO  service=contrato-service correlationId= thread=scheduling-1 logger=b.c.f.c.i.m.OutboxPublisherScheduler - outbox.publisher.ciclo.inicio quantidade=1
+2026-09-17 11:46:45.535 INFO  service=contrato-service correlationId= thread=scheduling-1 logger=b.c.f.c.i.m.OutboxPublisherScheduler - outbox.publisher.sucesso eventId=4591f927-0cee-465c-8214-e20415c3c07a contratoId=eb7e7dae-fb74-4c77-8921-d6395b467b60 eventType=ContratoCriado topico=contrato-eventos
+2026-09-17 11:51:08.722 INFO  service=contrato-service correlationId= thread=AsyncResolver-bootstrap-executor-%d logger=c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-09-17 11:56:08.735 INFO  service=contrato-service correlationId= thread=AsyncResolver-bootstrap-executor-%d logger=c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-09-17 11:56:47.343 INFO  service=contrato-service correlationId=sem-correlation-id thread=http-nio-8081-exec-9 logger=b.c.f.c.i.web.ContratoController - http.contrato.criar correlationId=null clienteId=55556666-5555-6666-5555-666655556666 freelancerId=77778888-7777-8888-7777-888877778888 titulo=MARCADOR UNICO TESTE FINAL
+2026-09-17 11:56:47.345 INFO  service=contrato-service correlationId=sem-correlation-id thread=http-nio-8081-exec-9 logger=b.c.f.c.a.ContratoApplicationService - contrato.criacao.inicio clienteId=55556666-5555-6666-5555-666655556666 freelancerId=77778888-7777-8888-7777-888877778888 titulo=MARCADOR UNICO TESTE FINAL valor=123.45
+2026-09-17 11:56:47.345 INFO  service=contrato-service correlationId=sem-correlation-id thread=http-nio-8081-exec-9 logger=b.c.f.c.i.p.ContratoRepositoryJpaAdapter - contrato.persistence.save.inicio contratoId=33ac23b3-a6e3-4d59-8054-9547b35d26f5 status=ATIVO
+2026-09-17 11:56:47.348 INFO  service=contrato-service correlationId=sem-correlation-id thread=http-nio-8081-exec-9 logger=b.c.f.c.i.p.ContratoRepositoryJpaAdapter - contrato.persistence.save.sucesso contratoId=33ac23b3-a6e3-4d59-8054-9547b35d26f5 status=ATIVO
+2026-09-17 11:56:47.352 INFO  service=contrato-service correlationId=sem-correlation-id thread=http-nio-8081-exec-9 logger=b.c.f.c.i.p.OutboxRepositoryJpaAdapter - contrato.outbox.registrado contratoId=33ac23b3-a6e3-4d59-8054-9547b35d26f5 eventId=be153710-9b88-4769-83f7-c96c50d81595 eventType=ContratoCriado
+2026-09-17 11:56:47.352 INFO  service=contrato-service correlationId=sem-correlation-id thread=http-nio-8081-exec-9 logger=b.c.f.c.a.ContratoApplicationService - contrato.evento.pendente contratoId=33ac23b3-a6e3-4d59-8054-9547b35d26f5 eventId=be153710-9b88-4769-83f7-c96c50d81595 eventType=ContratoCriado
+2026-09-17 11:56:47.352 INFO  service=contrato-service correlationId=sem-correlation-id thread=http-nio-8081-exec-9 logger=b.c.f.c.a.ContratoApplicationService - contrato.criacao.sucesso contratoId=33ac23b3-a6e3-4d59-8054-9547b35d26f5 status=ATIVO
+2026-09-17 11:56:47.367 INFO  service=contrato-service correlationId=sem-correlation-id thread=http-nio-8081-exec-9 logger=b.c.f.c.i.web.ContratoController - http.contrato.criar.response correlationId=null contratoId=33ac23b3-a6e3-4d59-8054-9547b35d26f5 status=ATIVO
+2026-09-17 11:56:47.497 INFO  service=contrato-service correlationId= thread=scheduling-1 logger=b.c.f.c.i.m.OutboxPublisherScheduler - outbox.publisher.ciclo.inicio quantidade=1
+2026-09-17 11:56:47.515 INFO  service=contrato-service correlationId= thread=scheduling-1 logger=b.c.f.c.i.m.OutboxPublisherScheduler - outbox.publisher.sucesso eventId=be153710-9b88-4769-83f7-c96c50d81595 contratoId=33ac23b3-a6e3-4d59-8054-9547b35d26f5 eventType=ContratoCriado topico=contrato-eventos
+2026-09-17 12:01:08.746 INFO  service=contrato-service correlationId= thread=AsyncResolver-bootstrap-executor-%d logger=c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-09-17 12:06:08.753 INFO  service=contrato-service correlationId= thread=AsyncResolver-bootstrap-executor-%d logger=c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-09-17 12:11:08.763 INFO  service=contrato-service correlationId= thread=AsyncResolver-bootstrap-executor-%d logger=c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-09-17 12:15:14.638 WARN  service=contrato-service correlationId= thread=AsyncReporter{ZipkinHttpClientSender{http://localhost:9411/api/v2/spans}} logger=z.r.i.AsyncReporter$BoundedAsyncReporter - Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
+2026-09-17 12:15:14.639 WARN  service=contrato-service correlationId= thread=AsyncReporter{ZipkinHttpClientSender{http://localhost:9411/api/v2/spans}} logger=z.r.i.AsyncReporter$BoundedAsyncReporter - Dropped 1 spans due to IOException(HTTP/1.1 header parser received no bytes)
+java.io.IOException: HTTP/1.1 header parser received no bytes
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:970)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:133)
+	at org.springframework.boot.zipkin.autoconfigure.ZipkinHttpClientSender.postSpans(ZipkinHttpClientSender.java:59)
+	at org.springframework.boot.zipkin.autoconfigure.HttpSender.postSpans(HttpSender.java:69)
+	at org.springframework.boot.zipkin.autoconfigure.HttpSender.postSpans(HttpSender.java:41)
+	at zipkin2.reporter.BaseHttpSender.send(BaseHttpSender.java:123)
+	at zipkin2.reporter.internal.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:266)
+	at zipkin2.reporter.internal.AsyncReporter$Flusher.run(AsyncReporter.java:352)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.io.IOException: HTTP/1.1 header parser received no bytes
+	at java.net.http/jdk.internal.net.http.common.Utils.wrapWithExtraDetail(Utils.java:412)
+	at java.net.http/jdk.internal.net.http.Http1Response$HeadersReader.onReadError(Http1Response.java:590)
+	at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.checkForErrors(Http1AsyncReceiver.java:302)
+	at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.flush(Http1AsyncReceiver.java:268)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:182)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	... 1 common frames omitted
+Caused by: java.io.EOFException: EOF reached while reading
+	at java.net.http/jdk.internal.net.http.Http1AsyncReceiver$Http1TubeSubscriber.onComplete(Http1AsyncReceiver.java:601)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadSubscription.signalCompletion(SocketTube.java:648)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:853)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:280)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:233)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:782)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:965)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:1477)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:1422)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:1422)
+2026-09-17 12:15:16.387 WARN  service=contrato-service correlationId= thread=scheduling-1 logger=com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@133c7a9b (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2026-09-17 12:15:16.389 WARN  service=contrato-service correlationId= thread=scheduling-1 logger=com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@3bd07a7f (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2026-09-17 12:15:16.390 WARN  service=contrato-service correlationId= thread=scheduling-1 logger=com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@27fe771f (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2026-09-17 12:15:16.391 WARN  service=contrato-service correlationId= thread=scheduling-1 logger=com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@576639d9 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2026-09-17 12:15:16.392 WARN  service=contrato-service correlationId= thread=scheduling-1 logger=com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@302529d5 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2026-09-17 12:15:16.393 WARN  service=contrato-service correlationId= thread=scheduling-1 logger=com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@81ebe2c (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2026-09-17 12:15:16.394 WARN  service=contrato-service correlationId= thread=scheduling-1 logger=com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@5c8c66bf (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2026-09-17 12:15:16.394 WARN  service=contrato-service correlationId= thread=scheduling-1 logger=com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@3a423406 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2026-09-17 12:15:16.395 WARN  service=contrato-service correlationId= thread=scheduling-1 logger=com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@23b0d91a (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2026-09-17 12:15:16.395 WARN  service=contrato-service correlationId= thread=scheduling-1 logger=com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@5e22fc9e (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2026-09-17 12:15:16.495 INFO  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Node 1 disconnected.
+2026-09-17 12:15:16.496 INFO  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=org.apache.kafka.clients.Metadata - [Producer clientId=contrato-service-producer-1] Rebootstrapping with [localhost/127.0.0.1:9092]
+2026-09-17 12:15:16.574 INFO  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Node -1 disconnected.
+2026-09-17 12:15:16.574 INFO  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Cancelled in-flight API_VERSIONS request with correlation id 19 due to node -1 being disconnected (elapsed time since creation: 76ms, elapsed time since send: 76ms, throttle time: 0ms, request timeout: 30000ms)
+2026-09-17 12:15:16.578 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:16.660 INFO  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=org.apache.kafka.clients.Metadata - [Producer clientId=contrato-service-producer-1] Rebootstrapping with [localhost/127.0.0.1:9092]
+2026-09-17 12:15:16.724 INFO  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Node -1 disconnected.
+2026-09-17 12:15:16.725 INFO  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Cancelled in-flight API_VERSIONS request with correlation id 20 due to node -1 being disconnected (elapsed time since creation: 1ms, elapsed time since send: 1ms, throttle time: 0ms, request timeout: 30000ms)
+2026-09-17 12:15:16.725 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:16.970 INFO  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Node -1 disconnected.
+2026-09-17 12:15:16.970 INFO  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Cancelled in-flight API_VERSIONS request with correlation id 21 due to node -1 being disconnected (elapsed time since creation: 2ms, elapsed time since send: 2ms, throttle time: 0ms, request timeout: 30000ms)
+2026-09-17 12:15:16.970 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:17.437 INFO  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Node -1 disconnected.
+2026-09-17 12:15:17.437 INFO  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Cancelled in-flight API_VERSIONS request with correlation id 22 due to node -1 being disconnected (elapsed time since creation: 2ms, elapsed time since send: 2ms, throttle time: 0ms, request timeout: 30000ms)
+2026-09-17 12:15:17.437 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:18.318 INFO  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Node -1 disconnected.
+2026-09-17 12:15:18.318 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:18.318 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:18.318 INFO  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=org.apache.kafka.clients.Metadata - [Producer clientId=contrato-service-producer-1] Rebootstrapping with [localhost/127.0.0.1:9092]
+2026-09-17 12:15:18.396 INFO  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=org.apache.kafka.clients.Metadata - [Producer clientId=contrato-service-producer-1] Rebootstrapping with [localhost/127.0.0.1:9092]
+2026-09-17 12:15:18.459 INFO  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=org.apache.kafka.clients.Metadata - [Producer clientId=contrato-service-producer-1] Rebootstrapping with [localhost/127.0.0.1:9092]
+2026-09-17 12:15:18.523 INFO  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=org.apache.kafka.clients.Metadata - [Producer clientId=contrato-service-producer-1] Rebootstrapping with [localhost/127.0.0.1:9092]
+2026-09-17 12:15:18.586 INFO  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=org.apache.kafka.clients.Metadata - [Producer clientId=contrato-service-producer-1] Rebootstrapping with [localhost/127.0.0.1:9092]
+2026-09-17 12:15:18.647 INFO  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=org.apache.kafka.clients.Metadata - [Producer clientId=contrato-service-producer-1] Rebootstrapping with [localhost/127.0.0.1:9092]
+2026-09-17 12:15:18.708 INFO  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=org.apache.kafka.clients.Metadata - [Producer clientId=contrato-service-producer-1] Rebootstrapping with [localhost/127.0.0.1:9092]
+2026-09-17 12:15:18.773 INFO  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=org.apache.kafka.clients.Metadata - [Producer clientId=contrato-service-producer-1] Rebootstrapping with [localhost/127.0.0.1:9092]
+2026-09-17 12:15:18.834 INFO  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=org.apache.kafka.clients.Metadata - [Producer clientId=contrato-service-producer-1] Rebootstrapping with [localhost/127.0.0.1:9092]
+2026-09-17 12:15:18.896 INFO  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=org.apache.kafka.clients.Metadata - [Producer clientId=contrato-service-producer-1] Rebootstrapping with [localhost/127.0.0.1:9092]
+2026-09-17 12:15:18.958 INFO  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=org.apache.kafka.clients.Metadata - [Producer clientId=contrato-service-producer-1] Rebootstrapping with [localhost/127.0.0.1:9092]
+2026-09-17 12:15:19.020 INFO  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=org.apache.kafka.clients.Metadata - [Producer clientId=contrato-service-producer-1] Rebootstrapping with [localhost/127.0.0.1:9092]
+2026-09-17 12:15:19.082 INFO  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=org.apache.kafka.clients.Metadata - [Producer clientId=contrato-service-producer-1] Rebootstrapping with [localhost/127.0.0.1:9092]
+2026-09-17 12:15:19.144 INFO  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=org.apache.kafka.clients.Metadata - [Producer clientId=contrato-service-producer-1] Rebootstrapping with [localhost/127.0.0.1:9092]
+2026-09-17 12:15:19.207 INFO  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=org.apache.kafka.clients.Metadata - [Producer clientId=contrato-service-producer-1] Rebootstrapping with [localhost/127.0.0.1:9092]
+2026-09-17 12:15:19.272 INFO  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=org.apache.kafka.clients.Metadata - [Producer clientId=contrato-service-producer-1] Rebootstrapping with [localhost/127.0.0.1:9092]
+2026-09-17 12:15:19.334 INFO  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Node -1 disconnected.
+2026-09-17 12:15:19.334 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:19.334 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:20.193 INFO  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=org.apache.kafka.clients.Metadata - [Producer clientId=contrato-service-producer-1] Rebootstrapping with [localhost/127.0.0.1:9092]
+2026-09-17 12:15:20.336 INFO  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Node -1 disconnected.
+2026-09-17 12:15:20.336 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:20.336 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:21.348 INFO  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Node -1 disconnected.
+2026-09-17 12:15:21.348 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:21.348 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:22.361 INFO  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Node -1 disconnected.
+2026-09-17 12:15:22.362 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:22.362 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:23.318 INFO  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=org.apache.kafka.clients.Metadata - [Producer clientId=contrato-service-producer-1] Rebootstrapping with [localhost/127.0.0.1:9092]
+2026-09-17 12:15:23.382 INFO  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Node -1 disconnected.
+2026-09-17 12:15:23.382 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:23.383 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:24.384 INFO  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Node -1 disconnected.
+2026-09-17 12:15:24.384 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:24.384 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:25.395 INFO  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Node -1 disconnected.
+2026-09-17 12:15:25.395 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:25.395 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:26.411 INFO  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Node -1 disconnected.
+2026-09-17 12:15:26.411 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:26.411 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:27.423 INFO  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Node -1 disconnected.
+2026-09-17 12:15:27.423 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:27.423 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:28.436 INFO  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Node -1 disconnected.
+2026-09-17 12:15:28.436 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:28.436 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:29.448 INFO  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Node -1 disconnected.
+2026-09-17 12:15:29.448 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:29.448 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:30.450 INFO  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Node -1 disconnected.
+2026-09-17 12:15:30.450 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:30.450 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:31.460 INFO  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Node -1 disconnected.
+2026-09-17 12:15:31.460 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:31.460 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:32.473 INFO  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Node -1 disconnected.
+2026-09-17 12:15:32.473 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:32.473 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:33.487 INFO  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Node -1 disconnected.
+2026-09-17 12:15:33.487 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:33.487 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:34.502 INFO  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Node -1 disconnected.
+2026-09-17 12:15:34.503 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:34.503 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:35.515 INFO  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Node -1 disconnected.
+2026-09-17 12:15:35.516 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:35.516 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:36.531 INFO  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Node -1 disconnected.
+2026-09-17 12:15:36.531 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:36.531 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:37.513 INFO  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Node -1 disconnected.
+2026-09-17 12:15:37.513 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:37.513 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:38.524 INFO  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Node -1 disconnected.
+2026-09-17 12:15:38.524 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:38.524 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:39.537 INFO  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Node -1 disconnected.
+2026-09-17 12:15:39.537 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:39.537 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:40.548 INFO  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Node -1 disconnected.
+2026-09-17 12:15:40.548 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:40.548 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:41.020 INFO  service=contrato-service correlationId= thread=DiscoveryClient-HeartbeatExecutor-%d logger=c.n.d.s.t.d.RedirectingEurekaHttpClient - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/} exception=I/O error on PUT request for "http://localhost:8761/eureka/apps/CONTRATO-SERVICE/localhost:contrato-service:8081": Connect to http://localhost:8761 failed: Connection refused: getsockopt
+org.springframework.web.client.ResourceAccessException: I/O error on PUT request for "http://localhost:8761/eureka/apps/CONTRATO-SERVICE/localhost:contrato-service:8081": Connect to http://localhost:8761 failed: Connection refused: getsockopt
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.createResourceAccessException(DefaultRestClient.java:779)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:624)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchange(DefaultRestClient.java:572)
+	at org.springframework.web.client.RestClient$RequestHeadersSpec.exchange(RestClient.java:747)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.executeAndExtract(DefaultRestClient.java:924)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntityInternal(DefaultRestClient.java:870)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntity(DefaultRestClient.java:859)
+	at org.springframework.cloud.netflix.eureka.http.RestClientEurekaHttpClient.sendHeartBeat(RestClientEurekaHttpClient.java:91)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:90)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:860)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1418)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:8761 failed: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:219)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:547)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:138)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:112)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:80)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeWithRequestAndBody(AbstractBufferingClientHttpRequest.java:89)
+	at org.springframework.http.client.InterceptingClientHttpRequest$EndOfChainRequestExecution.execute(InterceptingClientHttpRequest.java:102)
+	at org.springframework.cloud.netflix.eureka.http.RestClientTransportClientFactory.lambda$newClient$2(RestClientTransportClientFactory.java:98)
+	at org.springframework.http.client.ClientHttpRequestInterceptor.lambda$apply$0(ClientHttpRequestInterceptor.java:89)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:73)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:50)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:80)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:614)
+	... 22 common frames omitted
+2026-09-17 12:15:41.022 WARN  service=contrato-service correlationId= thread=DiscoveryClient-HeartbeatExecutor-%d logger=c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on PUT request for "http://localhost:8761/eureka/apps/CONTRATO-SERVICE/localhost:contrato-service:8081": Connect to http://localhost:8761 failed: Connection refused: getsockopt
+2026-09-17 12:15:41.026 INFO  service=contrato-service correlationId= thread=DiscoveryClient-HeartbeatExecutor-%d logger=c.n.d.s.t.d.RedirectingEurekaHttpClient - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on PUT request for "http://localhost:8761/eureka/apps/CONTRATO-SERVICE/localhost:contrato-service:8081": Connect to http://localhost:8761 failed: Connection refused: getsockopt
+org.springframework.web.client.ResourceAccessException: I/O error on PUT request for "http://localhost:8761/eureka/apps/CONTRATO-SERVICE/localhost:contrato-service:8081": Connect to http://localhost:8761 failed: Connection refused: getsockopt
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.createResourceAccessException(DefaultRestClient.java:779)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:624)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchange(DefaultRestClient.java:572)
+	at org.springframework.web.client.RestClient$RequestHeadersSpec.exchange(RestClient.java:747)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.executeAndExtract(DefaultRestClient.java:924)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntityInternal(DefaultRestClient.java:870)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntity(DefaultRestClient.java:859)
+	at org.springframework.cloud.netflix.eureka.http.RestClientEurekaHttpClient.sendHeartBeat(RestClientEurekaHttpClient.java:91)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:860)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1418)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:8761 failed: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:219)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:547)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:138)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:112)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:80)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeWithRequestAndBody(AbstractBufferingClientHttpRequest.java:89)
+	at org.springframework.http.client.InterceptingClientHttpRequest$EndOfChainRequestExecution.execute(InterceptingClientHttpRequest.java:102)
+	at org.springframework.cloud.netflix.eureka.http.RestClientTransportClientFactory.lambda$newClient$2(RestClientTransportClientFactory.java:98)
+	at org.springframework.http.client.ClientHttpRequestInterceptor.lambda$apply$0(ClientHttpRequestInterceptor.java:89)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:73)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:50)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:80)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:614)
+	... 23 common frames omitted
+2026-09-17 12:15:41.027 WARN  service=contrato-service correlationId= thread=DiscoveryClient-HeartbeatExecutor-%d logger=c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on PUT request for "http://localhost:8761/eureka/apps/CONTRATO-SERVICE/localhost:contrato-service:8081": Connect to http://localhost:8761 failed: Connection refused: getsockopt
+2026-09-17 12:15:41.027 ERROR service=contrato-service correlationId= thread=DiscoveryClient-HeartbeatExecutor-%d logger=c.netflix.discovery.DiscoveryClient - DiscoveryClient_CONTRATO-SERVICE/localhost:contrato-service:8081 - was unable to send heartbeat!
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:860)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1418)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-09-17 12:15:41.030 INFO  service=contrato-service correlationId= thread=DiscoveryClient-CacheRefreshExecutor-%d logger=c.n.d.s.t.d.RedirectingEurekaHttpClient - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/} exception=I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connect to http://localhost:8761 failed: Connection refused: getsockopt
+org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connect to http://localhost:8761 failed: Connection refused: getsockopt
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.createResourceAccessException(DefaultRestClient.java:779)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:624)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchange(DefaultRestClient.java:572)
+	at org.springframework.web.client.RestClient$RequestHeadersSpec.exchange(RestClient.java:747)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.executeAndExtract(DefaultRestClient.java:924)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntityInternal(DefaultRestClient.java:870)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntity(DefaultRestClient.java:859)
+	at org.springframework.cloud.netflix.eureka.http.RestClientEurekaHttpClient.getApplicationsInternal(RestClientEurekaHttpClient.java:201)
+	at org.springframework.cloud.netflix.eureka.http.RestClientEurekaHttpClient.getDelta(RestClientEurekaHttpClient.java:142)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:90)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1095)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:978)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1489)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1457)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:8761 failed: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:219)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:547)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:138)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:112)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:80)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeWithRequestAndBody(AbstractBufferingClientHttpRequest.java:89)
+	at org.springframework.http.client.InterceptingClientHttpRequest$EndOfChainRequestExecution.execute(InterceptingClientHttpRequest.java:102)
+	at org.springframework.cloud.netflix.eureka.http.RestClientTransportClientFactory.lambda$newClient$2(RestClientTransportClientFactory.java:98)
+	at org.springframework.http.client.ClientHttpRequestInterceptor.lambda$apply$0(ClientHttpRequestInterceptor.java:89)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:73)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:50)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:80)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:614)
+	... 25 common frames omitted
+2026-09-17 12:15:41.031 WARN  service=contrato-service correlationId= thread=DiscoveryClient-CacheRefreshExecutor-%d logger=c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connect to http://localhost:8761 failed: Connection refused: getsockopt
+2026-09-17 12:15:41.061 INFO  service=contrato-service correlationId= thread=DiscoveryClient-CacheRefreshExecutor-%d logger=c.n.d.s.t.d.RedirectingEurekaHttpClient - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connect to http://localhost:8761 failed: Connection refused: getsockopt
+org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connect to http://localhost:8761 failed: Connection refused: getsockopt
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.createResourceAccessException(DefaultRestClient.java:779)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:624)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchange(DefaultRestClient.java:572)
+	at org.springframework.web.client.RestClient$RequestHeadersSpec.exchange(RestClient.java:747)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.executeAndExtract(DefaultRestClient.java:924)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntityInternal(DefaultRestClient.java:870)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntity(DefaultRestClient.java:859)
+	at org.springframework.cloud.netflix.eureka.http.RestClientEurekaHttpClient.getApplicationsInternal(RestClientEurekaHttpClient.java:201)
+	at org.springframework.cloud.netflix.eureka.http.RestClientEurekaHttpClient.getDelta(RestClientEurekaHttpClient.java:142)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1095)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:978)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1489)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1457)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:8761 failed: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:219)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:547)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:138)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:112)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:80)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeWithRequestAndBody(AbstractBufferingClientHttpRequest.java:89)
+	at org.springframework.http.client.InterceptingClientHttpRequest$EndOfChainRequestExecution.execute(InterceptingClientHttpRequest.java:102)
+	at org.springframework.cloud.netflix.eureka.http.RestClientTransportClientFactory.lambda$newClient$2(RestClientTransportClientFactory.java:98)
+	at org.springframework.http.client.ClientHttpRequestInterceptor.lambda$apply$0(ClientHttpRequestInterceptor.java:89)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:73)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:50)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:80)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:614)
+	... 26 common frames omitted
+2026-09-17 12:15:41.062 WARN  service=contrato-service correlationId= thread=DiscoveryClient-CacheRefreshExecutor-%d logger=c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connect to http://localhost:8761 failed: Connection refused: getsockopt
+2026-09-17 12:15:41.062 INFO  service=contrato-service correlationId= thread=DiscoveryClient-CacheRefreshExecutor-%d logger=c.netflix.discovery.DiscoveryClient - DiscoveryClient_CONTRATO-SERVICE/localhost:contrato-service:8081 - was unable to refresh its cache! This periodic background refresh will be retried in 30 seconds. status = Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1095)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:978)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1489)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1457)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-09-17 12:15:41.496 INFO  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=org.apache.kafka.clients.Metadata - [Producer clientId=contrato-service-producer-1] Rebootstrapping with [localhost/127.0.0.1:9092]
+2026-09-17 12:15:41.560 INFO  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Node -1 disconnected.
+2026-09-17 12:15:41.561 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:41.561 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:42.572 INFO  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Node -1 disconnected.
+2026-09-17 12:15:42.572 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:42.572 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:43.574 INFO  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Node -1 disconnected.
+2026-09-17 12:15:43.574 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:43.574 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:44.586 INFO  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Node -1 disconnected.
+2026-09-17 12:15:44.586 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:44.586 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:45.601 INFO  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Node -1 disconnected.
+2026-09-17 12:15:45.601 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:45.601 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:46.397 WARN  service=contrato-service correlationId= thread=scheduling-1 logger=org.hibernate.orm.jdbc.error - HHH000247: ErrorCode: 0, SQLState: 08001
+2026-09-17 12:15:46.398 WARN  service=contrato-service correlationId= thread=scheduling-1 logger=org.hibernate.orm.jdbc.error - HikariPool-1 - Connection is not available, request timed out after 30011ms (total=0, active=0, idle=0, waiting=0)
+2026-09-17 12:15:46.398 WARN  service=contrato-service correlationId= thread=scheduling-1 logger=org.hibernate.orm.jdbc.error - HHH000247: ErrorCode: 0, SQLState: 08001
+2026-09-17 12:15:46.398 WARN  service=contrato-service correlationId= thread=scheduling-1 logger=org.hibernate.orm.jdbc.error - HikariPool-1 - Connection is not available, request timed out after 30011ms (total=0, active=0, idle=0, waiting=0)
+2026-09-17 12:15:46.400 ERROR service=contrato-service correlationId= thread=scheduling-1 logger=o.s.s.s.TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+org.springframework.transaction.CannotCreateTransactionException: Could not open JPA EntityManager for transaction
+	at org.springframework.orm.jpa.JpaTransactionManager.doBegin(JpaTransactionManager.java:457)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.startTransaction(AbstractPlatformTransactionManager.java:532)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:405)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.createTransactionIfNecessary(TransactionAspectSupport.java:628)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:365)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:130)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:719)
+	at br.com.freela.contrato.infrastructure.messaging.OutboxPublisherScheduler$$SpringCGLIB$$0.publicarPendentes(<generated>)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:128)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$1(ScheduledMethodRunnable.java:122)
+	at io.micrometer.observation.Observation.observe(Observation.java:569)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:122)
+	at org.springframework.scheduling.config.Task$OutcomeTrackingRunnable.run(Task.java:88)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.hibernate.exception.JDBCConnectionException: Unable to acquire JDBC Connection [HikariPool-1 - Connection is not available, request timed out after 30011ms (total=0, active=0, idle=0, waiting=0)] [n/a]
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:49)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:34)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:115)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:101)
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.acquire(LogicalConnectionManagedImpl.java:190)
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.acquireConnectionIfNeeded(LogicalConnectionManagedImpl.java:87)
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.getPhysicalConnection(LogicalConnectionManagedImpl.java:126)
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.getConnectionForTransactionManagement(LogicalConnectionManagedImpl.java:281)
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.begin(LogicalConnectionManagedImpl.java:290)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.begin(JdbcResourceLocalTransactionCoordinatorImpl.java:226)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.begin(TransactionImpl.java:75)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.beginTransaction(HibernateJpaDialect.java:147)
+	at org.springframework.orm.jpa.JpaTransactionManager.doBegin(JpaTransactionManager.java:411)
+	... 22 common frames omitted
+Caused by: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30011ms (total=0, active=0, idle=0, waiting=0)
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:714)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:184)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:142)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:127)
+	at org.hibernate.engine.jdbc.connections.internal.DataSourceConnectionProvider.getConnection(DataSourceConnectionProvider.java:149)
+	at org.hibernate.internal.NonContextualJdbcConnectionAccess.obtainConnection(NonContextualJdbcConnectionAccess.java:62)
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.acquire(LogicalConnectionManagedImpl.java:187)
+	... 30 common frames omitted
+Caused by: org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:425)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:52)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:290)
+	at org.postgresql.Driver.makeConnection(Driver.java:448)
+	at org.postgresql.Driver.connect(Driver.java:298)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:144)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:373)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:210)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:488)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:752)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:731)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	... 3 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:271)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:132)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:219)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:365)
+	... 14 common frames omitted
+2026-09-17 12:15:46.612 INFO  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Node -1 disconnected.
+2026-09-17 12:15:46.612 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:46.612 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:47.619 INFO  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Node -1 disconnected.
+2026-09-17 12:15:47.619 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:47.619 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:48.635 INFO  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Node -1 disconnected.
+2026-09-17 12:15:48.635 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:48.635 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:49.640 INFO  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Node -1 disconnected.
+2026-09-17 12:15:49.640 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:49.640 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:49.853 INFO  service=contrato-service correlationId= thread=SpringApplicationShutdownHook logger=o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application CONTRATO-SERVICE with eureka with status DOWN
+2026-09-17 12:15:49.854 INFO  service=contrato-service correlationId= thread=SpringApplicationShutdownHook logger=c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1789658149854, current=DOWN, previous=UP]
+2026-09-17 12:15:49.854 INFO  service=contrato-service correlationId= thread=DiscoveryClient-InstanceInfoReplicator-%d logger=c.netflix.discovery.DiscoveryClient - DiscoveryClient_CONTRATO-SERVICE/localhost:contrato-service:8081: registering service...
+2026-09-17 12:15:49.857 INFO  service=contrato-service correlationId= thread=SpringApplicationShutdownHook logger=o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-17 12:15:49.863 INFO  service=contrato-service correlationId= thread=DiscoveryClient-InstanceInfoReplicator-%d logger=c.n.d.s.t.d.RedirectingEurekaHttpClient - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on POST request for "http://localhost:8761/eureka/apps/CONTRATO-SERVICE": Connect to http://localhost:8761 failed: Connection refused: getsockopt
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8761/eureka/apps/CONTRATO-SERVICE": Connect to http://localhost:8761 failed: Connection refused: getsockopt
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.createResourceAccessException(DefaultRestClient.java:779)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:624)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchange(DefaultRestClient.java:572)
+	at org.springframework.web.client.RestClient$RequestHeadersSpec.exchange(RestClient.java:747)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.executeAndExtract(DefaultRestClient.java:924)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toBodilessEntity(DefaultRestClient.java:888)
+	at org.springframework.cloud.netflix.eureka.http.RestClientEurekaHttpClient.register(RestClientEurekaHttpClient.java:64)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:843)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:8761 failed: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:219)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:547)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:138)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:112)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:80)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeWithRequestAndBody(AbstractBufferingClientHttpRequest.java:89)
+	at org.springframework.http.client.InterceptingClientHttpRequest$EndOfChainRequestExecution.execute(InterceptingClientHttpRequest.java:102)
+	at org.springframework.cloud.netflix.eureka.http.RestClientTransportClientFactory.lambda$newClient$2(RestClientTransportClientFactory.java:98)
+	at org.springframework.http.client.ClientHttpRequestInterceptor.lambda$apply$0(ClientHttpRequestInterceptor.java:89)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:73)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:50)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:80)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:614)
+	... 24 common frames omitted
+2026-09-17 12:15:49.863 WARN  service=contrato-service correlationId= thread=DiscoveryClient-InstanceInfoReplicator-%d logger=c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/CONTRATO-SERVICE": Connect to http://localhost:8761 failed: Connection refused: getsockopt
+2026-09-17 12:15:49.864 WARN  service=contrato-service correlationId= thread=DiscoveryClient-InstanceInfoReplicator-%d logger=c.netflix.discovery.DiscoveryClient - DiscoveryClient_CONTRATO-SERVICE/localhost:contrato-service:8081 - registration failed Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:843)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-09-17 12:15:49.864 WARN  service=contrato-service correlationId= thread=DiscoveryClient-InstanceInfoReplicator-%d logger=c.n.discovery.InstanceInfoReplicator - There was a problem with the instance info replicator
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:843)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-09-17 12:15:49.870 INFO  service=contrato-service correlationId= thread=tomcat-shutdown logger=o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-09-17 12:15:50.656 INFO  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Node -1 disconnected.
+2026-09-17 12:15:50.656 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:50.656 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:51.641 INFO  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=org.apache.kafka.clients.Metadata - [Producer clientId=contrato-service-producer-1] Rebootstrapping with [localhost/127.0.0.1:9092]
+2026-09-17 12:15:51.703 INFO  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Node -1 disconnected.
+2026-09-17 12:15:51.703 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:51.703 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:52.614 INFO  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=org.apache.kafka.clients.Metadata - [Producer clientId=contrato-service-producer-1] Rebootstrapping with [localhost/127.0.0.1:9092]
+2026-09-17 12:15:52.709 INFO  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Node -1 disconnected.
+2026-09-17 12:15:52.709 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:52.709 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:53.713 INFO  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Node -1 disconnected.
+2026-09-17 12:15:53.713 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:53.713 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2026-09-17 12:15:54.727 INFO  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Node -1 disconnected.
+2026-09-17 12:15:54.727 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-09-17 12:15:54.727 WARN  service=contrato-service correlationId= thread=kafka-producer-network-thread | contrato-service-producer-1 logger=o.apache.kafka.clients.NetworkClient - [Producer clientId=contrato-service-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
